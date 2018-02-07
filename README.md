@@ -51,10 +51,12 @@ Within the download you'll find the following directories and files, logically g
 ```
 bootstrap4-rtl/
 ├── css/
-│   ├── bootstrap.css
-│   ├── bootstrap.css.map
+│   ├── bootstrap-rtl.css
+│   ├── bootstrap-rtl.css.map
+│   ├── bootstrap-rtl.min.css
+│   ├── bootstrap-rtl.min.css.map
+│   ├──bootstrap.css
 │   ├── bootstrap.min.css
-│   ├── bootstrap.min.css.map
 └── js/
     ├── bootstrap.bundle.js
     ├── bootstrap.bundle.min.js
@@ -62,18 +64,36 @@ bootstrap4-rtl/
     └── bootstrap.min.js
 ```
 
-We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
+We provide compiled CSS and JS (`bootstrap-rtl.*`), as well as compiled and minified CSS and JS (`bootstrap-rtl.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap-rtl.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
 
 ## introduction
 
 Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.
 
-### T wo ways to use bootstrap4-rtl.
-
+### Two ways to use bootstrap4-rtl.
+#### USE
+ bootstrap-rtl.css 
+ 
+ bootstrap-rtl.min.css 
+#### OR
+ custom-rtl.css
+ 
+ custom-rtl.min.css
+  
 ### CSS
 Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
 
-<pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre>
+<pre>
+<code class="language-html" data-lang="html">
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/bootstrap-rtl.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+</code>
+</pre>
+
+<pre>
+<code class="language-html" data-lang="html">
+<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/custom-rtl.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
+</code>
+</pre>
 
 ### JS
 
@@ -89,7 +109,8 @@ Copy-paste the stylesheet <link> into your <head> before all other stylesheets t
 
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
-<pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<pre>
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;head&gt;</span>
     <span class="c">&lt;!-- Required meta tags --&gt;</span>
@@ -97,7 +118,7 @@ Be sure to have your pages set up with the latest design and development standar
     <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
 
     <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/bootstrap-rtl.min.css"</span><span class="nt">&gt;</span>
 
     <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
@@ -120,46 +141,53 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 ## Documentation
 
-<p>
-  In this project, I used the webpack, a static module builder for javascript applications.
+### Using NPM scripts
+```
+|-----------------------|-------------------------------------------------------------|
 
-  The scss files are in the scss directory. And after running the npm dev command, a directory named dist is created, which is the same as the final files.
-</p>
+|        Task        |                     Description                       |
+|-----------------------|-------------------------------------------------------------|
+|                       | npm run dist creates the /dist directory|
+|  npm run dist | with compiled files. Uses Sass,              |
+|                       | Autoprefixer, and UglifyJS.                    |
+|-----------------------|-------------------------------------------------------------|
+|                       | Same as npm run dist plus it runs tests|
+|    npm test     | locally                                                   |
+|                       |                                                             |
+|-----------------------|-------------------------------------------------------------|
+|                       | Builds and lints CSS and JavaScript for  |
+| npm run docs | docs. You can then run the                   |
+|                       | documentation locally via npm run        |
+|                       | docs-serve.                                            |
+|-----------------------|--------------------------------------------------------------|
 
-### Running documentation locally
 
-1. Run through the [tooling setup](https://getbootstrap.com/docs/4.0/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
-2. Run `npm install` to install Node.js dependencies.
-3. Run `npm run test` (or a specific NPM script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-4. From the root `/bootstrap` directory, run `npm run docs-serve` in the command line.
-5. Open `http://localhost:9001` in your browser, and voilà.
 
-Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+```
+
+Learn more about build Bootstrap’s by reading its [documentation](http://getbootstrap.com/docs/4.0/getting-started/build-tools/).
 
 
 ## Community
 
 Get updates on Bootstrap's development and chat with the project maintainers and community members.
 
-- Follow [@getbootstrap on Twitter](https://twitter.com/hamidHeidarinia).
+- Follow [@hamidHeidarinia](https://twitter.com/hamidHeidarinia).
 
 
 
 ## Versioning
 
 <p>
-  Currently 1.0.0 is version and this bug fix will change.
-  Note: With Bootstrap 4 changes, I try to take changes in the new versions in less time.
+  Currently Project is V.1.0.0.
+  
+  Note :  As Bootstrap Upgrade To new Version , Our BT-RTL Also Will Update
 </p>
 
 ```
 version/
 ├── 1.0/
-│   ├── 1.1
-│   ├── 1.2
-└── 2.0/
-    ├── 2.1
-    ├── 2.2
+
 ```
 
 ## Creator
