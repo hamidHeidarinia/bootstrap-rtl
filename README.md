@@ -131,7 +131,9 @@ Be sure to have your pages set up with the latest design and development standar
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
     <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span></code></pre>
+<span class="nt">&lt;/html&gt;</span>
+</code>
+</pre>
 
 
 ## Bugs and feature requests
@@ -142,28 +144,12 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 ## Documentation
 
 ### Using NPM scripts
-```
-|-----------------------|-------------------------------------------------------------|
 
-|        Task        |                     Description                       |
-|-----------------------|-------------------------------------------------------------|
-|                       | npm run dist creates the /dist directory|
-|  npm run dist | with compiled files. Uses Sass,              |
-|                       | Autoprefixer, and UglifyJS.                    |
-|-----------------------|-------------------------------------------------------------|
-|                       | Same as npm run dist plus it runs tests|
-|    npm test     | locally                                                   |
-|                       |                                                             |
-|-----------------------|-------------------------------------------------------------|
-|                       | Builds and lints CSS and JavaScript for  |
-| npm run docs | docs. You can then run the                   |
-|                       | documentation locally via npm run        |
-|                       | docs-serve.                                            |
-|-----------------------|--------------------------------------------------------------|
-
-
-
-```
+| Task | Description |
+| ------ | ------ |
+| npm run dist | npm run dist creates the /dist directory with compiled files. Uses Sass, Autoprefixer, and UglifyJS. |
+| npm test | Same as npm run dist plus it runs tests locally |
+| npm run docs	 | Builds and lints CSS and JavaScript for docs. You can then run the documentation locally via npm run docs-serve. |
 
 Learn more about build Bootstrap’s by reading its [documentation](http://getbootstrap.com/docs/4.0/getting-started/build-tools/).
 
