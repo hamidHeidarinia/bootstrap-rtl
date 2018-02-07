@@ -1,5 +1,5 @@
 {
-  "name": "twbs/bootstrap",
+  "name": "bootstrap-rtl",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "keywords": [
     "css",
@@ -11,7 +11,7 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com",
+  "homepage": "https://github.com/hamidHeidarinia/bootstrap4-rtl",
   "authors": [
     {
       "name": "Mark Otto",
@@ -23,9 +23,9 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://github.com/hamidHeidarinia/bootstrap4-rtl/issues"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "extra": {
     "branch-alias": {
       "dev-master": "3.3.x-dev"
