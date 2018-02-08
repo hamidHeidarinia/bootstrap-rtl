@@ -1,13 +1,14 @@
 
 
-
 <p align="center">  
 
-  <h3 align="center">
+  <h1 align="center">
     <a href="https://hamidheidarinia.github.io/bootstrap4-rtl/">
       Bootstrap4-rtl
     </a>
-  </h3>
+  </h1>
+
+  
 
   <p align="center">
     Sleek, intuitive, and powerful front-end framework for faster and easier web development.
@@ -29,7 +30,7 @@
 
 <p>
   In this project, I tried to customize Bootstrap 4 for rtl pages.
-  I would Like To  Developer Or Designer Test it And Report If There's Any Bugs or Issues.
+  I will be happy,:+1: you'll  be Test it and report any bugs or issues.
 </p>
 
 
@@ -49,13 +50,13 @@
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-bootstrap4-rtl/
+dist/
 ├── css/
 │   ├── bootstrap-rtl.css
 │   ├── bootstrap-rtl.css.map
 │   ├── bootstrap-rtl.min.css
 │   ├── bootstrap-rtl.min.css.map
-│   ├──bootstrap.css
+│   ├── bootstrap.css
 │   ├── bootstrap.min.css
 └── js/
     ├── bootstrap.bundle.js
@@ -70,30 +71,20 @@ We provide compiled CSS and JS (`bootstrap-rtl.*`), as well as compiled and mini
 
 Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.
 
-### Two ways to use bootstrap4-rtl.
-#### USE
- bootstrap-rtl.css 
- 
- bootstrap-rtl.min.css 
-#### OR
- custom-rtl.css
- 
- custom-rtl.min.css
+### You can use bootstrap4-rtl in two ways
   
 ### CSS
 Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
+  
+```html5
+<link href="css/bootstrap-rtl.min.css" rel="stylesheet">
+```
+OR
 
-<pre>
-<code class="language-html" data-lang="html">
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/bootstrap-rtl.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-</code>
-</pre>
+```html5
+<link href="css/custom-rtl.min.css" rel="stylesheet">
+```
 
-<pre>
-<code class="language-html" data-lang="html">
-<span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">"css/custom-rtl.min.css"</span> <span class="na">rel=</span><span class="s">"stylesheet"</span><span class="nt">&gt;</span>
-</code>
-</pre>
 
 ### JS
 
@@ -101,39 +92,43 @@ Copy-paste the stylesheet <link> into your <head> before all other stylesheets t
 
 <p>We use <a href="https://blog.jquery.com/2016/06/09/jquery-3-0-final-released/">jQuery’s slim build</a>, but the full version is also supported.</p>
 
-<pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.2.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre>
+```html
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+```
+
+
+
 
 ### Starter template
 
 Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
-<pre>
-<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="c">&lt;!-- Required meta tags --&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, shrink-to-fit=no"</span><span class="nt">&gt;</span>
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"css/bootstrap-rtl.min.css"</span><span class="nt">&gt;</span>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
 
-    <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
 
-    <span class="c">&lt;!-- Optional JavaScript --&gt;</span>
-    <span class="c">&lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://code.jquery.com/jquery-3.2.1.slim.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"</span> <span class="na">integrity=</span><span class="s">"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code>
-</pre>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+```
 
 
 ## Bugs and feature requests
@@ -149,7 +144,7 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 | ------ | ------ |
 | npm run dist | npm run dist creates the /dist directory with compiled files. Uses Sass, Autoprefixer, and UglifyJS. |
 | npm test | Same as npm run dist plus it runs tests locally |
-| npm run docs	 | Builds and lints CSS and JavaScript for docs. You can then run the documentation locally via npm run docs-serve. |
+| npm run docs   | Builds and lints CSS and JavaScript for docs. You can then run the documentation locally via npm run docs-serve. |
 
 Learn more about build Bootstrap’s by reading its [documentation](http://getbootstrap.com/docs/4.0/getting-started/build-tools/).
 
