@@ -440,12 +440,12 @@ mark,
 }
 
 .list-unstyled {
-  padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
 .list-inline {
-  padding-left: 0;
+  padding-right: 0;
   list-style: none;
 }
 
@@ -819,47 +819,47 @@ pre code {
 }
 
 .offset-1 {
-  margin-left: 8.333333%;
+  margin-right: 8.333333%;
 }
 
 .offset-2 {
-  margin-left: 16.666667%;
+  margin-right: 16.666667%;
 }
 
 .offset-3 {
-  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .offset-4 {
-  margin-left: 33.333333%;
+  margin-right: 33.333333%;
 }
 
 .offset-5 {
-  margin-left: 41.666667%;
+  margin-right: 41.666667%;
 }
 
 .offset-6 {
-  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .offset-7 {
-  margin-left: 58.333333%;
+  margin-right: 58.333333%;
 }
 
 .offset-8 {
-  margin-left: 66.666667%;
+  margin-right: 66.666667%;
 }
 
 .offset-9 {
-  margin-left: 75%;
+  margin-right: 75%;
 }
 
 .offset-10 {
-  margin-left: 83.333333%;
+  margin-right: 83.333333%;
 }
 
 .offset-11 {
-  margin-left: 91.666667%;
+  margin-right: 91.666667%;
 }
 
 @media (min-width: 576px) {
@@ -1026,40 +1026,40 @@ pre code {
     order: 12;
   }
   .offset-sm-0 {
-    margin-left: 0;
+    margin-right: 0;
   }
   .offset-sm-1 {
-    margin-left: 8.333333%;
+    margin-right: 8.333333%;
   }
   .offset-sm-2 {
-    margin-left: 16.666667%;
+    margin-right: 16.666667%;
   }
   .offset-sm-3 {
-    margin-left: 25%;
+    margin-right: 25%;
   }
   .offset-sm-4 {
-    margin-left: 33.333333%;
+    margin-right: 33.333333%;
   }
   .offset-sm-5 {
-    margin-left: 41.666667%;
+    margin-right: 41.666667%;
   }
   .offset-sm-6 {
-    margin-left: 50%;
+    margin-right: 50%;
   }
   .offset-sm-7 {
-    margin-left: 58.333333%;
+    margin-right: 58.333333%;
   }
   .offset-sm-8 {
-    margin-left: 66.666667%;
+    margin-right: 66.666667%;
   }
   .offset-sm-9 {
-    margin-left: 75%;
+    margin-right: 75%;
   }
   .offset-sm-10 {
-    margin-left: 83.333333%;
+    margin-right: 83.333333%;
   }
   .offset-sm-11 {
-    margin-left: 91.666667%;
+    margin-right: 91.666667%;
   }
 }
 
@@ -1227,40 +1227,40 @@ pre code {
     order: 12;
   }
   .offset-md-0 {
-    margin-left: 0;
+    margin-right: 0;
   }
   .offset-md-1 {
-    margin-left: 8.333333%;
+    margin-right: 8.333333%;
   }
   .offset-md-2 {
-    margin-left: 16.666667%;
+    margin-right: 16.666667%;
   }
   .offset-md-3 {
-    margin-left: 25%;
+    margin-right: 25%;
   }
   .offset-md-4 {
-    margin-left: 33.333333%;
+    margin-right: 33.333333%;
   }
   .offset-md-5 {
-    margin-left: 41.666667%;
+    margin-right: 41.666667%;
   }
   .offset-md-6 {
-    margin-left: 50%;
+    margin-right: 50%;
   }
   .offset-md-7 {
-    margin-left: 58.333333%;
+    margin-right: 58.333333%;
   }
   .offset-md-8 {
-    margin-left: 66.666667%;
+    margin-right: 66.666667%;
   }
   .offset-md-9 {
-    margin-left: 75%;
+    margin-right: 75%;
   }
   .offset-md-10 {
-    margin-left: 83.333333%;
+    margin-right: 83.333333%;
   }
   .offset-md-11 {
-    margin-left: 91.666667%;
+    margin-right: 91.666667%;
   }
 }
 
@@ -1428,40 +1428,40 @@ pre code {
     order: 12;
   }
   .offset-lg-0 {
-    margin-left: 0;
+    margin-right: 0;
   }
   .offset-lg-1 {
-    margin-left: 8.333333%;
+    margin-right: 8.333333%;
   }
   .offset-lg-2 {
-    margin-left: 16.666667%;
+    margin-right: 16.666667%;
   }
   .offset-lg-3 {
-    margin-left: 25%;
+    margin-right: 25%;
   }
   .offset-lg-4 {
-    margin-left: 33.333333%;
+    margin-right: 33.333333%;
   }
   .offset-lg-5 {
-    margin-left: 41.666667%;
+    margin-right: 41.666667%;
   }
   .offset-lg-6 {
-    margin-left: 50%;
+    margin-right: 50%;
   }
   .offset-lg-7 {
-    margin-left: 58.333333%;
+    margin-right: 58.333333%;
   }
   .offset-lg-8 {
-    margin-left: 66.666667%;
+    margin-right: 66.666667%;
   }
   .offset-lg-9 {
-    margin-left: 75%;
+    margin-right: 75%;
   }
   .offset-lg-10 {
-    margin-left: 83.333333%;
+    margin-right: 83.333333%;
   }
   .offset-lg-11 {
-    margin-left: 91.666667%;
+    margin-right: 91.666667%;
   }
 }
 
@@ -1629,40 +1629,40 @@ pre code {
     order: 12;
   }
   .offset-xl-0 {
-    margin-left: 0;
+    margin-right: 0;
   }
   .offset-xl-1 {
-    margin-left: 8.333333%;
+    margin-right: 8.333333%;
   }
   .offset-xl-2 {
-    margin-left: 16.666667%;
+    margin-right: 16.666667%;
   }
   .offset-xl-3 {
-    margin-left: 25%;
+    margin-right: 25%;
   }
   .offset-xl-4 {
-    margin-left: 33.333333%;
+    margin-right: 33.333333%;
   }
   .offset-xl-5 {
-    margin-left: 41.666667%;
+    margin-right: 41.666667%;
   }
   .offset-xl-6 {
-    margin-left: 50%;
+    margin-right: 50%;
   }
   .offset-xl-7 {
-    margin-left: 58.333333%;
+    margin-right: 58.333333%;
   }
   .offset-xl-8 {
-    margin-left: 66.666667%;
+    margin-right: 66.666667%;
   }
   .offset-xl-9 {
-    margin-left: 75%;
+    margin-right: 75%;
   }
   .offset-xl-10 {
-    margin-left: 83.333333%;
+    margin-right: 83.333333%;
   }
   .offset-xl-11 {
-    margin-left: 91.666667%;
+    margin-right: 91.666667%;
   }
 }
 
@@ -3138,7 +3138,7 @@ tbody.collapse.show {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 0.255em;
+  margin-right: 0.255em;
   vertical-align: 0.255em;
   content: "";
   border-top: 0.3em solid;
@@ -3148,7 +3148,7 @@ tbody.collapse.show {
 }
 
 .dropdown-toggle:empty::after {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .dropdown-menu {
@@ -3180,7 +3180,7 @@ tbody.collapse.show {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 0.255em;
+  margin-right: 0.255em;
   vertical-align: 0.255em;
   content: "";
   border-top: 0;
@@ -3190,7 +3190,7 @@ tbody.collapse.show {
 }
 
 .dropup .dropdown-toggle:empty::after {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .dropright .dropdown-menu {
@@ -3199,6 +3199,19 @@ tbody.collapse.show {
 }
 
 .dropright .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+}
+
+.dropright .dropdown-toggle::after {
+  display: none;
+}
+
+.dropright .dropdown-toggle::before {
   display: inline-block;
   width: 0;
   height: 0;
@@ -3211,7 +3224,7 @@ tbody.collapse.show {
 }
 
 .dropright .dropdown-toggle:empty::after {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .dropright .dropdown-toggle::after {
@@ -3227,19 +3240,6 @@ tbody.collapse.show {
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-}
-
-.dropleft .dropdown-toggle::after {
-  display: none;
-}
-
-.dropleft .dropdown-toggle::before {
-  display: inline-block;
-  width: 0;
-  height: 0;
   margin-right: 0.255em;
   vertical-align: 0.255em;
   content: "";
@@ -3249,7 +3249,7 @@ tbody.collapse.show {
 }
 
 .dropleft .dropdown-toggle:empty::after {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .dropleft .dropdown-toggle::before {
@@ -4723,7 +4723,7 @@ tbody.collapse.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 0;
+  padding-right: 0;
   list-style: none;
   border-radius: 0.25rem;
 }
@@ -4789,13 +4789,13 @@ tbody.collapse.show {
 }
 
 .pagination-lg .page-item:first-child .page-link {
-  border-top-left-radius: 0.3rem;
-  border-bottom-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
 
 .pagination-lg .page-item:last-child .page-link {
-  border-top-right-radius: 0.3rem;
-  border-bottom-right-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
 }
 
 .pagination-sm .page-link {
@@ -4805,13 +4805,13 @@ tbody.collapse.show {
 }
 
 .pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
 }
 
 .pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
 }
 
 .badge {
@@ -5573,7 +5573,7 @@ button.close {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
+  text-align: right;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
@@ -5686,7 +5686,7 @@ button.close {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
-  text-align: left;
+  text-align: right;
   text-align: start;
   text-decoration: none;
   text-shadow: none;
