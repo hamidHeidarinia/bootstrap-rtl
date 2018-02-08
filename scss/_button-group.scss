@@ -28,7 +28,7 @@
   .btn + .btn-group,
   .btn-group + .btn,
   .btn-group + .btn-group {
-    margin-left: -$btn-border-width;
+    margin-right: -$btn-border-width;
   }
 }
 
@@ -45,7 +45,7 @@
 
 .btn-group {
   > .btn:first-child {
-    margin-left: 0;
+    margin-right: 0;
   }
 
   // Reset rounded corners
@@ -77,7 +77,7 @@
   padding-left: $btn-padding-x * .75;
 
   &::after {
-    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -123,7 +123,7 @@
   > .btn-group + .btn,
   > .btn-group + .btn-group {
     margin-top: -$btn-border-width;
-    margin-left: 0;
+    margin-right: 0;
   }
 
   // Reset rounded corners
