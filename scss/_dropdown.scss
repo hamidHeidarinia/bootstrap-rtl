@@ -13,10 +13,10 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
-  float: left;
+  float: right;
   min-width: $dropdown-min-width;
   padding: $dropdown-padding-y 0;
   margin: $dropdown-spacer 0 0; // override default ul
@@ -47,7 +47,7 @@
 .dropright {
   .dropdown-menu {
     margin-top: 0;
-    margin-left: $dropdown-spacer;
+    margin-right: $dropdown-spacer;
   }
 
   .dropdown-toggle {
@@ -61,7 +61,7 @@
 .dropleft {
   .dropdown-menu {
     margin-top: 0;
-    margin-right: $dropdown-spacer;
+    margin-left: $dropdown-spacer;
   }
 
   .dropdown-toggle {
