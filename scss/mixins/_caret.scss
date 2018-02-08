@@ -30,19 +30,19 @@
       display: inline-block;
       width: 0;
       height: 0;
-      margin-left: $caret-width * .85;
+      margin-right: $caret-width * .85;
       vertical-align: $caret-width * .85;
       content: "";
       @if $direction == down {
         @include caret-down;
       } @else if $direction == up {
         @include caret-up;
-      } @else if $direction == right {
-        @include caret-right;
+      } @else if $direction == left {
+        @include caret-left;
       }
     }
 
-    @if $direction == left {
+    @if $direction == right {
       &::after {
         display: none;
       }
@@ -51,15 +51,15 @@
         display: inline-block;
         width: 0;
         height: 0;
-        margin-right: $caret-width * .85;
+        margin-left: $caret-width * .85;
         vertical-align: $caret-width * .85;
         content: "";
-        @include caret-left;
+        @include caret-right;
       }
     }
 
     &:empty::after {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
