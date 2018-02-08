@@ -22,6 +22,7 @@
 *::before,
 *::after {
   box-sizing: border-box; // 1
+  direction: rtl;
 }
 
 html {
@@ -61,7 +62,7 @@ body {
   font-weight: $font-weight-base;
   line-height: $line-height-base;
   color: $body-color;
-  text-align: left; // 3
+  text-align: right; // 3
   background-color: $body-bg; // 2
 }
 
@@ -291,7 +292,7 @@ caption {
   padding-top: $table-cell-padding;
   padding-bottom: $table-cell-padding;
   color: $text-muted;
-  text-align: left;
+  text-align: right;
   caption-side: bottom;
 }
 
