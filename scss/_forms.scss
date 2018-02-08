@@ -208,13 +208,13 @@ select.form-control-lg {
 .form-check {
   position: relative;
   display: block;
-  padding-left: $form-check-input-gutter;
+  padding-right: $form-check-input-gutter;
 }
 
 .form-check-input {
   position: absolute;
   margin-top: $form-check-input-margin-y;
-  margin-left: -$form-check-input-gutter;
+  margin-right: -$form-check-input-gutter;
 
   &:disabled ~ .form-check-label {
     color: $text-muted;
@@ -228,8 +228,8 @@ select.form-control-lg {
 .form-check-inline {
   display: inline-flex;
   align-items: center;
-  padding-left: 0; // Override base .form-check
-  margin-right: $form-check-inline-margin-x;
+  padding-right: 0; // Override base .form-check
+  margin-left: $form-check-inline-margin-x;
 
   // Undo .form-check-input defaults and add some `margin-right`.
   .form-check-input {
@@ -313,7 +313,7 @@ select.form-control-lg {
       align-items: center;
       justify-content: center;
       width: auto;
-      padding-left: 0;
+      padding-right: 0;
     }
     .form-check-input {
       position: relative;
