@@ -1,7 +1,7 @@
 .popover {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: $zindex-popover;
   display: block;
   max-width: $popover-max-width;
@@ -110,7 +110,7 @@
   .popover-header::before {
     position: absolute;
     top: 0;
-    left: 50%;
+    right: 50%;
     display: block;
     width: $popover-arrow-width;
     margin-left: ($popover-arrow-width / -2);
