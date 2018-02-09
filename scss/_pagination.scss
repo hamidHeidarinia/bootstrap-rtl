@@ -8,7 +8,7 @@
   position: relative;
   display: block;
   padding: $pagination-padding-y $pagination-padding-x;
-  margin-left: -$pagination-border-width;
+  margin-right: -$pagination-border-width;
   line-height: $pagination-line-height;
   color: $pagination-color;
   background-color: $pagination-bg;
@@ -36,13 +36,13 @@
 .page-item {
   &:first-child {
     .page-link {
-      margin-left: 0;
-      @include border-left-radius($border-radius);
+      margin-right: 0;
+      @include border-right-radius($border-radius);
     }
   }
   &:last-child {
     .page-link {
-      @include border-right-radius($border-radius);
+      @include border-left-radius($border-radius);
     }
   }
 
