@@ -39,6 +39,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  direction: rtl;
 }
 
 html {
@@ -65,7 +66,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
+  text-align: right;
   background-color: #fff;
 }
 
@@ -222,7 +223,7 @@ caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #6c757d;
-  text-align: left;
+  text-align: right;
   caption-side: bottom;
 }
 
@@ -2139,13 +2140,13 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 .form-check {
   position: relative;
   display: block;
-  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
-  margin-left: -1.25rem;
+  margin-right: -1.25rem;
 }
 
 .form-check-input:disabled ~ .form-check-label {
@@ -2163,8 +2164,8 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-left: 0;
-  margin-right: 0.75rem;
+  padding-right: 0;
+  margin-left: 0.75rem;
 }
 
 .form-check-inline .form-check-input {
@@ -2436,7 +2437,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     -ms-flex-pack: center;
     justify-content: center;
     width: auto;
-    padding-left: 0;
+    padding-right: 0;
   }
   .form-inline .form-check-input {
     position: relative;
@@ -3154,10 +3155,10 @@ tbody.collapse.show {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   z-index: 1000;
   display: none;
-  float: left;
+  float: right;
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
@@ -3195,7 +3196,7 @@ tbody.collapse.show {
 
 .dropright .dropdown-menu {
   margin-top: 0;
-  margin-left: 0.125rem;
+  margin-right: 0.125rem;
 }
 
 .dropright .dropdown-toggle::after {
@@ -3233,7 +3234,7 @@ tbody.collapse.show {
 
 .dropleft .dropdown-menu {
   margin-top: 0;
-  margin-right: 0.125rem;
+  margin-left: 0.125rem;
 }
 
 .dropleft .dropdown-toggle::after {
@@ -3343,7 +3344,7 @@ tbody.collapse.show {
 .btn-group-vertical .btn + .btn-group,
 .btn-group-vertical .btn-group + .btn,
 .btn-group-vertical .btn-group + .btn-group {
-  margin-left: -1px;
+  margin-right: -1px;
 }
 
 .btn-toolbar {
@@ -3362,7 +3363,7 @@ tbody.collapse.show {
 }
 
 .btn-group > .btn:first-child {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
@@ -3383,7 +3384,7 @@ tbody.collapse.show {
 }
 
 .dropdown-toggle-split::after {
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
@@ -3419,7 +3420,7 @@ tbody.collapse.show {
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-top: -1px;
-  margin-left: 0;
+  margin-right: 0;
 }
 
 .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
@@ -3548,11 +3549,11 @@ tbody.collapse.show {
 }
 
 .input-group-prepend {
-  margin-right: -1px;
+  margin-left: -1px;
 }
 
 .input-group-append {
-  margin-left: -1px;
+  margin-right: -1px;
 }
 
 .input-group-text {
@@ -3586,8 +3587,8 @@ tbody.collapse.show {
 .input-group > .input-group-append:not(:last-child) > .input-group-text,
 .input-group > .input-group-append:last-child > .btn:not(:last-child):not(.dropdown-toggle),
 .input-group > .input-group-append:last-child > .input-group-text:not(:last-child) {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .input-group > .input-group-append > .btn,
@@ -3596,22 +3597,22 @@ tbody.collapse.show {
 .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
 .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
 .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .custom-control {
   position: relative;
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .custom-control-inline {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .custom-control-input {
@@ -3649,7 +3650,7 @@ tbody.collapse.show {
 .custom-control-label::before {
   position: absolute;
   top: 0.25rem;
-  left: 0;
+  right: 0;
   display: block;
   width: 1rem;
   height: 1rem;
@@ -3665,7 +3666,7 @@ tbody.collapse.show {
 .custom-control-label::after {
   position: absolute;
   top: 0.25rem;
-  left: 0;
+  right: 0;
   display: block;
   width: 1rem;
   height: 1rem;
@@ -3749,7 +3750,7 @@ tbody.collapse.show {
 
 .custom-select[multiple], .custom-select[size]:not([size="1"]) {
   height: auto;
-  padding-right: 0.75rem;
+  padding-left: 0.75rem;
   background-image: none;
 }
 
@@ -3844,7 +3845,7 @@ tbody.collapse.show {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   list-style: none;
 }
@@ -3968,7 +3969,7 @@ tbody.collapse.show {
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -3986,7 +3987,7 @@ tbody.collapse.show {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
   list-style: none;
 }
@@ -4482,7 +4483,7 @@ tbody.collapse.show {
 }
 
 .card-link + .card-link {
-  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 
 .card-header {
@@ -4620,28 +4621,28 @@ tbody.collapse.show {
     border-left: 0;
   }
   .card-group > .card:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
   .card-group > .card:first-child .card-img-top,
   .card-group > .card:first-child .card-header {
-    border-top-right-radius: 0;
+    border-top-left-radius: 0;
   }
   .card-group > .card:first-child .card-img-bottom,
   .card-group > .card:first-child .card-footer {
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
   .card-group > .card:last-child {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .card-group > .card:last-child .card-img-top,
   .card-group > .card:last-child .card-header {
-    border-top-left-radius: 0;
+    border-top-right-radius: 0;
   }
   .card-group > .card:last-child .card-img-bottom,
   .card-group > .card:last-child .card-footer {
-    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   .card-group > .card:only-child {
     border-radius: 0.25rem;
@@ -4732,7 +4733,7 @@ tbody.collapse.show {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
-  margin-left: -1px;
+  margin-right: -1px;
   line-height: 1.25;
   color: #007bff;
   background-color: #fff;
@@ -4757,14 +4758,14 @@ tbody.collapse.show {
 }
 
 .page-item:first-child .page-link {
-  margin-left: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
+  margin-right: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
 .page-item:last-child .page-link {
-  border-top-right-radius: 0.25rem;
-  border-bottom-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .page-item.active .page-link {
@@ -4971,7 +4972,7 @@ tbody.collapse.show {
 .alert-dismissible .close {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   padding: 0.75rem 1.25rem;
   color: inherit;
 }
@@ -5167,7 +5168,7 @@ tbody.collapse.show {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0;
 }
 
@@ -5368,7 +5369,7 @@ tbody.collapse.show {
 }
 
 .close {
-  float: right;
+  float: left;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
@@ -5530,11 +5531,11 @@ button.close {
 }
 
 .modal-footer > :not(:first-child) {
-  margin-left: .25rem;
+  margin-right: .25rem;
 }
 
 .modal-footer > :not(:last-child) {
-  margin-right: .25rem;
+  margin-left: .25rem;
 }
 
 .modal-scrollbar-measure {
@@ -5678,7 +5679,7 @@ button.close {
 .popover {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1060;
   display: block;
   max-width: 276px;
@@ -5795,7 +5796,7 @@ button.close {
 .bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
   position: absolute;
   top: 0;
-  left: 50%;
+  right: 50%;
   display: block;
   width: 1rem;
   margin-left: -0.5rem;
@@ -5995,7 +5996,7 @@ button.close {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 0;
+  padding-right: 0;
   margin-right: 15%;
   margin-left: 15%;
   list-style: none;
