@@ -5681,7 +5681,7 @@ button.close {
 .popover {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1060;
   display: block;
   max-width: 276px;
@@ -5798,7 +5798,7 @@ button.close {
 .bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
   position: absolute;
   top: 0;
-  right: 50%;
+  left: 50%;
   display: block;
   width: 1rem;
   margin-left: -0.5rem;
