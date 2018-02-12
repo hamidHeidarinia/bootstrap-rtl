@@ -124,8 +124,8 @@ dt {
 }
 
 dd {
+  margin-right: 0;
   margin-bottom: .5rem;
-  margin-left: 0;
 }
 
 blockquote {
@@ -3155,7 +3155,7 @@ tbody.collapse.show {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   z-index: 1000;
   display: none;
   float: right;
@@ -3164,7 +3164,7 @@ tbody.collapse.show {
   margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
+  text-align: right;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
@@ -5499,6 +5499,8 @@ button.close {
 }
 
 .modal-header .close {
+  position: absolute;
+  left: 0;
   padding: 1rem;
   margin: -1rem -1rem -1rem auto;
 }
