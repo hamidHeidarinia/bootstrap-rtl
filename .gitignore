@@ -17,9 +17,8 @@ vendor/bundle
 *.swo
 *.swp
 *.vi
-*.zip
 *~
-
+v4.0.0.zip
 # OS or Editor folders
 ._*
 .cache
