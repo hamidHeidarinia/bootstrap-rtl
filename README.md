@@ -16,11 +16,11 @@
     <a href="https://getbootstrap.com/docs/4.0/"><strong>Explore Bootstrap docs »</strong></a>
     <br>
     <br>
-    <a href="https://themes.getbootstrap.com/">Bootstrap Themes</a>
-    ·
-    <a href="https://jobs.getbootstrap.com/">Job Board</a>
-    ·
-    <a href="https://blog.getbootstrap.com/">Blog</a>
+    <a href="https://github.com/hamidHeidarinia/bootstrap4-rtl/archive/master.zip">Download Source</a>
+  .
+  <a href="https://github.com/hamidHeidarinia/bootstrap4-rtl/raw/master/bootstrap4-rtl.zip">Download Compiled</a>
+  .
+  <a href="http://bs4rtl.heidarinia.pro/">Test Bs4-rtl Page</a>
   </p>
 </p>
 
@@ -40,7 +40,7 @@
 - [Documentation](#documentation)
 - [Community](#community)
 - [Versioning](#versioning)
-- [Creators](#creator)
+- [Creators](#creators)
 - [Copyright and license](#copyright-and-license)
 
 
@@ -56,8 +56,8 @@ dist/
 │   ├── bootstrap-rtl.css.map
 │   ├── bootstrap-rtl.min.css
 │   ├── bootstrap-rtl.min.css.map
-│   ├── bootstrap.css
-│   ├── bootstrap.min.css
+│   ├── custom-rtl.css
+│   ├── custom-rtl.min.css
 └── js/
     ├── bootstrap.bundle.js
     ├── bootstrap.bundle.min.js
@@ -82,6 +82,7 @@ Copy-paste the stylesheet <link> into your <head> before all other stylesheets t
 OR
 
 ```html5
+<link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/custom-rtl.min.css" rel="stylesheet">
 ```
 
@@ -124,8 +125,8 @@ Be sure to have your pages set up with the latest design and development standar
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
 ```
@@ -160,25 +161,42 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 ## Versioning
 
 <p>
-  Currently Project is V.1.0.0.
+  Currently Project is V2.0
   
   Note :  As Bootstrap Upgrade To new Version , Our BT-RTL Also Will Update
 </p>
 
 ```
-version/
-├── 1.0/
+Version
+├── v1.0
+|   └── v1.1
+|
+└── v2.0
 
 ```
 
-## Creator
+## Creators
+
+
+### bootstrap v4.0.0 
+
+**Mark Otto**
+
+- <https://twitter.com/mdo>
+- <https://github.com/mdo>
+
+**Jacob Thornton**
+
+- <https://twitter.com/fat>
+- <https://github.com/fat>
+
+### bootstrap4-rtl v2.0 
 
 **Hamid Heidarinia**
 
 - <https://twitter.com/hamidHeidarinia>
 - <https://github.com/hamidHeidarinia>
 - <https://www.linkedin.com/in/hamid-heidarinia>
-
 - <https://www.heidarinia.pro>
 
 
@@ -186,4 +204,4 @@ version/
 
 ## Copyright and license
 
-Code and documentation copyright 2018 the [Bootstrap4-rtl Authors](https://github.com/hamidHeidarinia) and [Twitter, Inc.](https://twitter.com) Code released under the [GPL-3.0 License](https://github.com/hamidHeidarinia/bootstrap4-rtl/blob/master/LICENSE). 
+Code and documentation copyright 2018 the [Bootstrap4-rtl Authors](https://github.com/hamidHeidarinia) Code released under the [GPL-3.0 License](https://github.com/hamidHeidarinia/bootstrap4-rtl/blob/master/LICENSE). 
