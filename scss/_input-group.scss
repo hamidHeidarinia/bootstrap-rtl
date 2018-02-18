@@ -29,14 +29,14 @@
     + .form-control,
     + .custom-select,
     + .custom-file {
-      margin-left: -$input-border-width;
+      margin-right: -$input-border-width;
     }
   }
 
   > .form-control,
   > .custom-select {
-    &:not(:last-child) { @include border-right-radius(0); }
-    &:not(:first-child) { @include border-left-radius(0); }
+    &:not(:last-child) { @include border-left-radius(0); }
+    &:not(:first-child) { @include border-right-radius(0); }
   }
 
   // Custom file inputs have more complex markup, thus requiring different
@@ -46,9 +46,9 @@
     align-items: center;
 
     &:not(:last-child) .custom-file-label,
-    &:not(:last-child) .custom-file-label::before { @include border-right-radius(0); }
+    &:not(:last-child) .custom-file-label::before { @include border-left-radius(0); }
     &:not(:first-child) .custom-file-label,
-    &:not(:first-child) .custom-file-label::before { @include border-left-radius(0); }
+    &:not(:first-child) .custom-file-label::before { @include border-right-radius(0); }
   }
 }
 
@@ -75,7 +75,7 @@
   .btn + .input-group-text,
   .input-group-text + .input-group-text,
   .input-group-text + .btn {
-    margin-left: -$input-border-width;
+    margin-right: -$input-border-width;
   }
 }
 
