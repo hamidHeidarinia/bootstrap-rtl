@@ -246,6 +246,7 @@ caption {
   margin-left: 0.75rem;
 }
 
+
 @media (min-width: 576px) {
   .form-inline .form-check {
     padding-right: 0;
@@ -279,19 +280,12 @@ caption {
 
 .dropright .dropdown-toggle::after {
   margin-right: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
 }
 
 .dropright .dropdown-toggle::after { 
   display: none;
 }
 
-.dropright .dropdown-toggle::before{
-  display: inline-block;
-  width: 0;
-  height: 0;
-}
 
 .dropright .dropdown-toggle:empty::after{
   margin-right: 0;
@@ -322,6 +316,18 @@ caption {
   margin-right: 0;
 }
 
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-group > .btn:not(:first-child),
+.btn-group > .btn-group:not(:first-child) > .btn {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 .dropdown-toggle-split::after {
   margin-right: 0;
 }
@@ -331,6 +337,53 @@ caption {
 .btn-group-vertical > .btn-group + .btn,
 .btn-group-vertical > .btn-group + .btn-group {
   margin-right: 0;
+}
+
+.input-group > .form-control + .form-control,
+.input-group > .form-control + .custom-select,
+.input-group > .form-control + .custom-file,
+.input-group > .custom-select + .form-control,
+.input-group > .custom-select + .custom-select,
+.input-group > .custom-select + .custom-file,
+.input-group > .custom-file + .form-control,
+.input-group > .custom-file + .custom-select,
+.input-group > .custom-file + .custom-file {
+  margin-right: -1px;
+}
+
+.input-group > .form-control:not(:last-child),
+.input-group > .custom-select:not(:last-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > .form-control:not(:first-child),
+.input-group > .custom-select:not(:first-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group > .custom-file:not(:last-child) .custom-file-label,
+.input-group > .custom-file:not(:last-child) .custom-file-label::before {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group > .custom-file:not(:first-child) .custom-file-label,
+.input-group > .custom-file:not(:first-child) .custom-file-label::before {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-prepend .btn + .btn,
+.input-group-prepend .btn + .input-group-text,
+.input-group-prepend .input-group-text + .input-group-text,
+.input-group-prepend .input-group-text + .btn,
+.input-group-append .btn + .btn,
+.input-group-append .btn + .input-group-text,
+.input-group-append .input-group-text + .input-group-text,
+.input-group-append .input-group-text + .btn {
+  margin-right: -1px;
 }
 
 .input-group-prepend {
@@ -499,11 +552,9 @@ caption {
   text-align: right;
 }
 
-
 .popover {
   text-align: right;
 }
-
 
 .carousel-indicators {
   padding-right: 0;
