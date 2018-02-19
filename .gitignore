@@ -43,6 +43,7 @@ twbsconfig.yml
 
 # Folders to ignore
 node_modules
+testBs4-rtl
 
 
 ### Linux ###
