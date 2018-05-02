@@ -168,10 +168,11 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 
 ```
 Version
-├── v1.0
-|   └── v1.1
+├── v 4.0
+|   └── v 4.1
+|   └── v 4.1.1
 |
-└── v2.0
+ 
 
 ```
 
@@ -190,17 +191,12 @@ Version
 - <https://twitter.com/fat>
 - <https://github.com/fat>
 
-### bootstrap4-rtl v2.0 
-
 **Hamid Heidarinia**
 
 - <https://twitter.com/hamidHeidarinia>
 - <https://github.com/hamidHeidarinia>
 - <https://www.linkedin.com/in/hamid-heidarinia>
 - <https://www.heidarinia.pro>
-
-
-
 
 ## Copyright and license
 

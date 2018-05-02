@@ -19,6 +19,7 @@ vendor/bundle
 *.vi
 *~
 v4.0.0.zip
+v4.1.1.zip
 # OS or Editor folders
 ._*
 .cache
