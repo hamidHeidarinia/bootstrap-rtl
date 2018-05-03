@@ -32,6 +32,8 @@ pre {
   display: block;
   font-size: $code-font-size;
   color: $pre-color;
+  text-align: left;
+  direction: ltr;
 
   // Account for some code outputs that place code tags in pre tags
   code {

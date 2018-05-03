@@ -94,8 +94,8 @@
   &[x-placement^="right"],
   &[x-placement^="bottom"],
   &[x-placement^="left"] {
-    left: auto;
     bottom: auto;
+    left: auto;
   }
 }
 // stylelint-enable no-duplicate-selectors
