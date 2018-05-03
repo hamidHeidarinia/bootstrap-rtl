@@ -161,7 +161,7 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 ## Versioning
 
 <p>
-  Currently Project is V2.0
+  Currently Project is V4.1.1
   
   Note :  As Bootstrap Upgrade To new Version , Our BT-RTL Also Will Update
 </p>
@@ -170,6 +170,7 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 Version
 ├── v 4.0
 |   └── v 4.1
+|   |
 |   └── v 4.1.1
 |
  
@@ -190,6 +191,8 @@ Version
 
 - <https://twitter.com/fat>
 - <https://github.com/fat>
+
+### bootstrap4-rtl
 
 **Hamid Heidarinia**
 
