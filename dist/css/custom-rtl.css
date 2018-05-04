@@ -1,11 +1,15 @@
 /*!
- * Bootstrap4-rtl v2.0.0 (https://hamidheidarinia.github.io/bootstrap4-rtl/)
+ * Bootstrap4-rtl v4.1.1 (https://hamidheidarinia.github.io/bootstrap4-rtl/)
  * Copyright 2018 The Hamid Heidarinia Authors - heidarinia.hamid@gmail.com
  * Copyright 2018 https://heidarinia.pro/
  * Licensed under GPL-3.0 (https://github.com/hamidHeidarinia/bootstrap4-rtl/blob/master/LICENSE)
  */
-
-
+/*!
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 *,
 *::before,
 *::after {
@@ -18,6 +22,7 @@ body {
 
 dd {
   margin-right: 0;
+  margin-bottom: .5rem;
 }
 
 caption {
@@ -30,6 +35,11 @@ caption {
 
 .list-inline {
   padding-right: 0;
+}
+
+pre {
+  text-align: left;
+  direction: ltr;
 }
 
 .offset-1 {
@@ -51,12 +61,15 @@ caption {
 .offset-5 {
   margin-right: 41.666667%;
 }
+
 .offset-6 {
   margin-right: 50%;
 }
+
 .offset-7 {
   margin-right: 58.333333%;
 }
+
 .offset-8 {
   margin-right: 66.666667%;
 }
@@ -105,7 +118,6 @@ caption {
   .offset-sm-9 {
     margin-right: 75%;
   }
-
   .offset-sm-10 {
     margin-right: 83.333333%;
   }
@@ -152,10 +164,10 @@ caption {
   .offset-md-11 {
     margin-right: 91.666667%;
   }
-
 }
 
 @media (min-width: 992px) {
+  
   .offset-lg-0 {
     margin-right: 0;
   }
@@ -275,31 +287,77 @@ caption {
 }
 
 .dropright .dropdown-menu {
+  top: 0;
+  right: auto;
+  left: 100%;
+  margin-top: 0;
   margin-right: 0.125rem;
 }
 
 .dropright .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
   margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
 }
 
-.dropright .dropdown-toggle::after { 
+.dropright .dropdown-toggle::after {
   display: none;
 }
 
+.dropright .dropdown-toggle::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-bottom: 0.3em solid transparent;
+  border-left: 0.3em solid;
+}
 
-.dropright .dropdown-toggle:empty::after{
+.dropright .dropdown-toggle:empty::after {
   margin-right: 0;
 }
 
-.dropleft .dropdown-menu{
+.dropright .dropdown-toggle::after {
+  vertical-align: 0;
+}
+
+.dropleft .dropdown-menu {
+  top: 0;
+  right: 100%;
+  left: auto;
+  margin-top: 0;
   margin-left: 0.125rem;
+}
+
+.dropleft .dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid transparent;
+  border-right: 0.3em solid;
+  border-bottom: 0.3em solid transparent;
 }
 
 .dropleft .dropdown-toggle:empty::after {
   margin-right: 0;
 }
 
+.dropleft .dropdown-toggle::before {
+  vertical-align: 0;
+}
 
+.dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
+  left: auto;
+}
 
 .btn-group .btn + .btn,
 .btn-group .btn + .btn-group,
@@ -328,8 +386,14 @@ caption {
   border-bottom-right-radius: 0;
 }
 
-.dropdown-toggle-split::after {
+.dropdown-toggle-split::after,
+.dropup .dropdown-toggle-split::after,
+.dropright .dropdown-toggle-split::after {
   margin-right: 0;
+}
+
+.dropleft .dropdown-toggle-split::before {
+  margin-left: 0;
 }
 
 .btn-group-vertical > .btn + .btn,
@@ -423,15 +487,22 @@ caption {
 }
 
 .custom-control-label::before {
-  right: 0;
+  right: -1.5rem;
 }
 
 .custom-control-label::after {
-  right: 0;
+  right: -1.5rem;
 }
 
 .custom-select[multiple], .custom-select[size]:not([size="1"]) {
   padding-left: 0.75rem;
+}
+
+.custom-range {
+  padding-right: 0;
+}
+.custom-range::-ms-fill-upper {
+  margin-left: 15px;
 }
 
 .nav {
@@ -481,7 +552,15 @@ caption {
   .card-group > .card:last-child .card-footer {
     border-bottom-right-radius: 0;
   }
+}
 
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .pagination {
@@ -533,11 +612,6 @@ caption {
 
 .close {
   float: left;
-}
-
-.modal-header .close{
-  position: absolute;
-  left: 0;
 }
 
 .modal-footer > :not(:first-child) {
