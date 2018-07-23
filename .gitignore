@@ -1,6 +1,7 @@
 # Ignore docs files
 _gh_pages
 _site
+site/docs/4.1/dist/
 
 # Ignore ruby files
 .ruby-version
@@ -20,6 +21,9 @@ vendor/bundle
 *~
 v4.0.0.zip
 v4.1.1.zip
+v4.1.2.zip
+
+
 # OS or Editor folders
 ._*
 .cache
@@ -48,6 +52,8 @@ js/coverage
 testBs4-rtl
 
 
+# Created by linux,sublimetext,visualstudiocode
+
 ### Linux ###
 *~
 
@@ -64,19 +70,19 @@ testBs4-rtl
 .nfs*
 
 ### SublimeText ###
-# cache files for sublime text
+# Cache files for Sublime Text
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
 
-# workspace files are user-specific
+# Workspace files are user-specific
 *.sublime-workspace
 
-# project files should be checked into the repository, unless a significant
-# proportion of contributors will probably not be using SublimeText
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
 # *.sublime-project
 
-# sftp configuration file
+# SFTP configuration file
 sftp-config.json
 
 # Package control specific files
@@ -95,3 +101,12 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+# End of linux,sublimetext,visualstudiocode

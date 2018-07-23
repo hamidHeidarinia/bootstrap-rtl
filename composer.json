@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-rtl",
+  "name": "bootstrap4-rtl",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "keywords": [
     "css",
@@ -20,6 +20,10 @@
     {
       "name": "Jacob Thornton",
       "email": "jacobthornton@gmail.com"
+    },
+    {
+      "name": "Hamid Heidarinia",
+      "email": "heidarinia.hamid@gmail.com"
     }
   ],
   "support": {

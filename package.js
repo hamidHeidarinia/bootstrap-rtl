@@ -3,10 +3,10 @@
 /* eslint-env meteor */
 
 Package.describe({
-  name: 'twbs:bootstrap',  // https://atmospherejs.com/twbs/bootstrap
+  name: 'bootstrap4-rtl',  // https://atmospherejs.com/twbs/bootstrap
   summary: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
-  version: '4.1.1',
-  git: 'https://github.com/twbs/bootstrap.git'
+  version: '4.1.2',
+  git: 'https://github.com/hamidHeidarinia/bootstrap4-rtl'
 });
 
 Package.onUse(function (api) {
