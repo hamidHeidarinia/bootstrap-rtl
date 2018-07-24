@@ -194,7 +194,7 @@ Version
 - <https://twitter.com/fat>
 - <https://github.com/fat>
 
-### bootstrap4-rtl v4.1.2
+### bootstrap-rtl v4.1.2
 
 **Hamid Heidarinia**
 
