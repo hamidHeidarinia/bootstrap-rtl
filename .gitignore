@@ -47,9 +47,12 @@ docs/.jekyll-metadata
 twbsconfig.yml
 
 # Folders to ignore
+node_modules/
 node_modules
 js/coverage
 testBs4-rtl
+testBs4-rtl/
+
 
 
 # Created by linux,sublimetext,visualstudiocode
