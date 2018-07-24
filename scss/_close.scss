@@ -1,4 +1,6 @@
 .close {
+  position: absolute;
+  left: 0;
   float: left;
   font-size: $close-font-size;
   font-weight: $close-font-weight;
