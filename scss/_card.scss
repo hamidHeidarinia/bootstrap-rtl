@@ -183,7 +183,7 @@
     // The child selector allows nested `.card` within `.card-group`
     // to display properly.
     > .card {
-      // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4      
+      // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
       flex: 1 0 0%;
       margin-bottom: 0;
 

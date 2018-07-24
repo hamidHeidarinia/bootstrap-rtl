@@ -13,10 +13,8 @@
   + .breadcrumb-item {
     padding-left: $breadcrumb-item-padding;
 
-    // The separator between breadcrumbs (by default, a forward-slash: "/")
     &::before {
       display: inline-block; // Suppress underlining of the separator in modern browsers
-      padding-right: $breadcrumb-item-padding;
       padding-left: $breadcrumb-item-padding;
       color: $breadcrumb-divider-color;
       content: $breadcrumb-divider;
