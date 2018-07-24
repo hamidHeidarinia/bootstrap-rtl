@@ -167,27 +167,27 @@
   ],
   "bundlesize": [
     {
-      "path": "./dist/css/bootstrap-grid-rtl.css",
+      "path": "./dist/css/bootstrap4-rtl-grid.css",
       "maxSize": "5 kB"
     },
     {
-      "path": "./dist/css/bootstrap-grid-rtl.min.css",
+      "path": "./dist/css/bootstrap4-rtl-grid.min.css",
       "maxSize": "5 kB"
     },
     {
-      "path": "./dist/css/bootstrap-reboot-rtl.css",
+      "path": "./dist/css/bootstrap4-rtl-reboot.css",
       "maxSize": "3 kB"
     },
     {
-      "path": "./dist/css/bootstrap-reboot-rtl.min.css",
+      "path": "./dist/css/bootstrap4-rtl-reboot.min.css",
       "maxSize": "3 kB"
     },
     {
-      "path": "./dist/css/bootstrap-rtl.css",
+      "path": "./dist/css/bootstrap4-rtl.css",
       "maxSize": "25 kB"
     },
     {
-      "path": "./dist/css/bootstrap-rtl.min.css",
+      "path": "./dist/css/bootstrap4-rtl.min.css",
       "maxSize": "21 kB"
     },
     {
