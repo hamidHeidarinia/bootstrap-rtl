@@ -1,6 +1,7 @@
 
 
 <p align="center">  
+<img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width=72 height=72>
 
   <h1 align="center">
     <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/">
