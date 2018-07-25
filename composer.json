@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap4-rtl",
+  "name": "bootstrap-rtl",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "keywords": [
     "css",
@@ -11,7 +11,7 @@
     "framework",
     "web"
   ],
-  "homepage": "https://github.com/hamidHeidarinia/bootstrap4-rtl",
+  "homepage": "https://github.com/hamidHeidarinia/bootstrap-rtl",
   "authors": [
     {
       "name": "Mark Otto",
@@ -27,7 +27,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/hamidHeidarinia/bootstrap4-rtl/issues"
+    "issues": "https://github.com/hamidHeidarinia/bootstrap-rtl/issues"
   },
   "license": "GPL-3.0",
   "extra": {

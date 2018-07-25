@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap4-rtl",
+  "name": "bootstrap-rtl",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "4.1.2",
   "keywords": [
@@ -11,8 +11,8 @@
     "framework",
     "web"
   ],
-  "homepage": "https://github.com/hamidHeidarinia/bootstrap4-rtl",
-  "author": "The Bootstrap Authors (https://github.com/hamidHeidarinia/bootstrap4-rtl/graphs/contributors)",
+  "homepage": "https://github.com/hamidHeidarinia/bootstrap-rtl",
+  "author": "The Bootstrap Authors (https://github.com/hamidHeidarinia/bootstrap-rtl/graphs/contributors)",
   "contributors": [
     "Twitter, Inc."
   ],
@@ -85,10 +85,10 @@
   "main": "dist/js/bootstrap",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hamidHeidarinia/bootstrap4-rtl.git"
+    "url": "https://github.com/hamidHeidarinia/bootstrap-rtl.git"
   },
   "bugs": {
-    "url": "https://github.com/hamidHeidarinia/bootstrap4-rtl/issues"
+    "url": "https://github.com/hamidHeidarinia/bootstrap-rtl/issues"
   },
   "license": "GPL-3.0",
   "dependencies": {},

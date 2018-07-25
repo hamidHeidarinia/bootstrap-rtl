@@ -3,7 +3,7 @@
 <p align="center">  
 
   <h1 align="center">
-    <a href="https://hamidheidarinia.github.io/bootstrap4-rtl/">
+    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/">
       Bootstrap4-rtl
     </a>
   </h1>
