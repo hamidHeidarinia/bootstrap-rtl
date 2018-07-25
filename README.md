@@ -16,11 +16,11 @@
     <a href="https://getbootstrap.com/docs/4.0/"><strong>Explore Bootstrap docs »</strong></a>
     <br>
     <br>
-    <a href="https://github.com/hamidHeidarinia/bootstrap4-rtl/archive/master.zip">Download Source</a>
+    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/archive/master.zip">Download Source</a>
   .
-  <a href="https://github.com/hamidHeidarinia/bootstrap4-rtl/raw/master/bootstrap4-rtl.zip">Download Compiled</a>
+  <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.2.zip">Download Compiled</a>
   .
-  <a href="http://bs4rtl.heidarinia.pro/">Test Bs4-rtl Page</a>
+  <a href="http://bootstrap-rtl.heidarinia.pro/">Test Bootstrap-rtl Page</a>
   </p>
 </p>
 
@@ -71,7 +71,7 @@ We provide compiled CSS and JS (`bootstrap-rtl.*`), as well as compiled and mini
 
 Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.
 
-### You can use bootstrap4-rtl in two ways
+### You can use bootstrap-rtl in two ways
   
 ### CSS
 Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
@@ -134,7 +134,7 @@ Be sure to have your pages set up with the latest design and development standar
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/hamidHeidarinia/bootstrap4-rtl/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/hamidHeidarinia/bootstrap4-rtl/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/hamidHeidarinia/bootstrap-rtl/issues) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/hamidHeidarinia/bootstrap-rtl/issues/new).
 
 
 ## Documentation
@@ -205,4 +205,4 @@ Version
 
 ## Copyright and license
 
-Code and documentation copyright 2018 the [Bootstrap4-rtl Authors](https://github.com/hamidHeidarinia) Code released under the [GPL-3.0 License](https://github.com/hamidHeidarinia/bootstrap4-rtl/blob/master/LICENSE). 
+Code and documentation copyright 2018 the [Bootstrap-rtl Authors](https://github.com/hamidHeidarinia) Code released under the [GPL-3.0 License](https://github.com/hamidHeidarinia/bootstrap-rtl/blob/master/LICENSE). 
