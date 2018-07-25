@@ -4,7 +4,7 @@
 
   <h1 align="center">
     <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/">
-      Bootstrap4-rtl
+      Bootstrap-rtl
     </a>
   </h1>
 
