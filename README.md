@@ -162,7 +162,7 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 ## Versioning
 
 <p>
-  Currently Project is V4.1.2
+  Currently Project is V4.1.3
   
   Note :  As Bootstrap Upgrade To new Version , Our BT-RTL Also Will Update
 </p>
@@ -175,6 +175,8 @@ Version
 |   └── v 4.1.1
 |   |
 |   └── v 4.1.2
+|   |
+|   └── v 4.1.3
 |
  
 
@@ -183,7 +185,7 @@ Version
 ## Creators
 
 
-### bootstrap v4.1.2 
+### bootstrap v4.1.3
 
 **Mark Otto**
 
@@ -195,7 +197,7 @@ Version
 - <https://twitter.com/fat>
 - <https://github.com/fat>
 
-### bootstrap-rtl v4.1.2
+### bootstrap-rtl v4.1.3
 
 **Hamid Heidarinia**
 
