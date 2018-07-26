@@ -50,8 +50,9 @@ twbsconfig.yml
 # Folders to ignore
 node_modules
 js/coverage
-testBs4-rtl
-testBs4-rtl/*
+bootstrap-rtl-test
+bootstrap-rtl-test/
+bootstrap-rtl-test/*
 
 # linux,macos,windows,webstorm,phpstorm,sublimetext,visualstudiocode
 
