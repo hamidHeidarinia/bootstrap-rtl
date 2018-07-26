@@ -305,7 +305,7 @@ pre {
   .offset-xl-10 {
     margin-right: 83.333333%;
   }
-
+  
   .offset-xl-11 {
     margin-right: 91.666667%;
   }
@@ -462,6 +462,10 @@ pre {
 
 .dropleft .dropdown-toggle:empty::after {
   margin-right: 0;
+}
+
+.dropleft .dropdown-toggle::before {
+  vertical-align: 0;
 }
 
 .dropdown-menu[x-placement^="top"], .dropdown-menu[x-placement^="right"], .dropdown-menu[x-placement^="bottom"], .dropdown-menu[x-placement^="left"] {
@@ -719,9 +723,12 @@ pre {
 
 }
 
+.breadcrumb-item + .breadcrumb-item {
+  padding-right: 0.5rem;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
-  padding-right: 0.5rem;
   padding-left: 0.5rem;
   color: #6c757d;
   content: "/";
@@ -882,5 +889,4 @@ pre {
   margin-left: 15%;
   list-style: none;
 }
-
 /*# sourceMappingURL=custom-rtl.css.map */
