@@ -19,7 +19,7 @@
     <br>
     <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/archive/master.zip">Download Source</a>
   .
-  <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.2.zip">Download Compiled</a>
+  <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.3.zip">Download Compiled</a>
   .
   <a href="http://bootstrap-rtl.heidarinia.pro/">Test Bootstrap-rtl Page</a>
   </p>
