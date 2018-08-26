@@ -112,8 +112,8 @@ OR
 ```
 
 ### Package managers
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrapRTL`
-- Install with [Bower](https://bower.io): bower install bootstrapRTL --save-dev
+- Install with [npm](https://www.npmjs.com/): `npm install bootstrap-rtol`
+- Install with [Bower](https://bower.io): bower install bootstrap-rtol --save-dev
 - Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrapRTL:4.1.3`
 
 
@@ -122,7 +122,7 @@ OR
 
 [![Slack](https://img.shields.io/badge/Slack-channel-%236ecadc.svg)](https://bootstrap-rtl.slack.com/)
 [![Telegram](https://img.shields.io/badge/Telegram-Group-%230088cc.svg)](https://t.me/joinchat/FNTvOkyXjQspDgUxC2IxoA)
-[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
+[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap-rtol)
 [![Bower version](https://img.shields.io/badge/Bower-v4.1.3-yellow.svg)](https://rubygems.org/gems/bootstrap)
 [![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
 [![Github Status](https://img.shields.io/badge/Github-v4.1.3-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
