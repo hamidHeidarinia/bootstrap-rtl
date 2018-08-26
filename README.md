@@ -35,7 +35,6 @@
 - [Documentation](#documentation)
   - [Using NPM scripts](#using-npm-scripts)
   - [Running documentation locally](#running-documentation-locally)
-  - [Documentation for previous releases](#documentation-for-previous-releases)
 - [Community](#community)
 - [Community](#community)
 - [Versioning](#versioning)
@@ -52,7 +51,7 @@ Several quick start options are available:
 - [Download the latest release.](https://github.com/hamidHeidarinia/bootstrap-rtl/archive/master.zip)
 - Clone the repo on Github: `https://github.com/hamidHeidarinia/bootstrap-rtl.git`
 - Clone the repo on Gitlab: `https://gitlab.com/hamidHeidarinia/bootstrap-rtl.git`
-- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.3.zip)
+- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.3-dist.zip)
 
   
 #### CSS
@@ -113,8 +112,7 @@ OR
 
 ### Package managers
 - Install with [npm](https://www.npmjs.com/): `npm install bootstrap-rtol`
-- Install with [Bower](https://bower.io): bower install bootstrap-rtol --save-dev
-- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrapRTL:4.1.3`
+- Install with [Bower](https://bower.io): bower install bootstrap-rtol
 
 
 
@@ -124,7 +122,6 @@ OR
 [![Telegram](https://img.shields.io/badge/Telegram-Group-%230088cc.svg)](https://t.me/joinchat/FNTvOkyXjQspDgUxC2IxoA)
 [![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap-rtol)
 [![Bower version](https://img.shields.io/badge/Bower-v4.1.3-yellow.svg)](https://rubygems.org/gems/bootstrap)
-[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
 [![Github Status](https://img.shields.io/badge/Github-v4.1.3-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
 [![Gitlab Status](https://img.shields.io/badge/Gitlab-v4.1.3-%233A0064.svg)](https://gitlab.com/hamidHeidarinia/bootstrap-rtl)
 
@@ -192,12 +189,6 @@ Learn more about build Bootstrap’s by reading its [documentation](http://getbo
 4. Open `http://localhost:9001` in your browser, and voilà.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
-
-### Documentation for previous releases
-
-- For v2.3.2: <https://getbootstrap.com/2.3.2/>
-- For v3.3.x: <https://getbootstrap.com/docs/3.3/>
-- For v4.0.x: <https://getbootstrap.com/docs/4.0/>
 
 [Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
 
