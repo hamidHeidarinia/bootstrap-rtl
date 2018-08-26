@@ -121,7 +121,7 @@ OR
 [![Slack](https://img.shields.io/badge/Slack-channel-%236ecadc.svg)](https://bootstrap-rtl.slack.com/)
 [![Telegram](https://img.shields.io/badge/Telegram-Group-%230088cc.svg)](https://t.me/joinchat/FNTvOkyXjQspDgUxC2IxoA)
 [![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap-rtol)
-[![Bower version](https://img.shields.io/badge/Bower-v4.1.3-yellow.svg)](https://rubygems.org/gems/bootstrap)
+[![Bower version](https://img.shields.io/badge/Bower-v4.1.3-yellow.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
 [![Github Status](https://img.shields.io/badge/Github-v4.1.3-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
 [![Gitlab Status](https://img.shields.io/badge/Gitlab-v4.1.3-%233A0064.svg)](https://gitlab.com/hamidHeidarinia/bootstrap-rtl)
 
