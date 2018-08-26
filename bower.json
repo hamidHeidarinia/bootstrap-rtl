@@ -1,0 +1,51 @@
+{
+  "name": "bootstrap-rtol",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "main": "dist/js/bootstrap",
+  "authors": [
+    "https://twitter.com/hamidHeidarinia"
+  ],
+  "license": "GPL-3.0",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://github.com/hamidHeidarinia/bootstrap-rtl",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bootstrap-rtl-test",
+    "build",
+    "nuget",
+    "site",
+    "bootstrap-rtl-4.1.3-dist.zip",
+    "CODE_OF_CONDUCT.md",
+    "composer.json",
+    "_config.yml",
+    "Gemfile",
+    "Gemfile.lock",
+    "package.js",
+    "package.json",
+    "package-lock.json",
+    "sache.json",
+    "v4.1.3.zip",
+    ".babelrc.js",
+    ".browserslistrc",
+    ".editorconfig",
+    ".eslintignore",
+    ".eslintrc.json",
+    ".gitattributes",
+    ".stylelintignore",
+    ".stylelintrc",
+    ".travis.yml"
+  ]
+}
