@@ -1,80 +1,61 @@
+<p align="center">
+  <a href="https://github.com/hamidHeidarinia/bootstrap-rtl">
+    <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width=72 height=72>
+  </a>
 
-
-<p align="center">  
-<img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width=72 height=72>
-
-  <h1 align="center">
-    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/">
-      Bootstrap-rtl
-    </a>
-  </h1>
-
-  
+  <h3 align="center">Bootstrap-rtl</h3>
 
   <p align="center">
     Sleek, intuitive, and powerful front-end framework for faster and easier web development.
     <br>
-    <a href="https://getbootstrap.com/docs/4.0/"><strong>Explore Bootstrap docs »</strong></a>
+    <a href="https://getbootstrap.com/docs/4.1/"><strong>Explore Bootstrap docs »</strong></a>
     <br>
     <br>
-    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/archive/master.zip">Download Source</a>
-  .
-  <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.3.zip">Download Compiled</a>
-  .
-  <a href="http://bootstrap-rtl.heidarinia.pro/">Test Bootstrap-rtl Page</a>
+    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/issues/new">Report bug</a>
+    ·
+    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/labels/feature">Request feature</a>
   </p>
 </p>
 
 <br>
 
-## Description
-
-<p>
-  In this project, I tried to customize Bootstrap 4 for rtl pages.
-  I will be happy,:+1: you'll  be Test it and report any bugs or issues.
-</p>
+## Table of contents
 
 
+- [Table of contents](#table-of-contents)
+- [Quick start](#quick-start)
+  - [Download](#download)
+    - [CSS](#css)
+    - [JS](#js)
+    - [Starter template](#starter-template)
+  - [Package managers](#package-managers)
+- [Status](#status)
 - [What's included](#whats-included)
-- [Introduction](#introduction)
 - [Bugs and feature requests](#bugs-and-feature-requests)
 - [Documentation](#documentation)
+  - [Using NPM scripts](#using-npm-scripts)
+  - [Running documentation locally](#running-documentation-locally)
+  - [Documentation for previous releases](#documentation-for-previous-releases)
+- [Community](#community)
 - [Community](#community)
 - [Versioning](#versioning)
 - [Creators](#creators)
+  - [bootstrap v4.1.3](#bootstrap-v413)
+  - [bootstrap-rtl v4.1.3](#bootstrap-rtl-v413)
 - [Copyright and license](#copyright-and-license)
 
+## Quick start
 
+Several quick start options are available:
 
-## What's included
+### Download
+- [Download the latest release.](https://github.com/hamidHeidarinia/bootstrap-rtl/archive/master.zip)
+- Clone the repo on Github: `https://github.com/hamidHeidarinia/bootstrap-rtl.git`
+- Clone the repo on Gitlab: `https://gitlab.com/hamidHeidarinia/bootstrap-rtl.git`
+- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.3.zip)
 
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-
-```
-dist/
-├── css/
-│   ├── bootstrap-rtl.css
-│   ├── bootstrap-rtl.css.map
-│   ├── bootstrap-rtl.min.css
-│   ├── bootstrap-rtl.min.css.map
-│   ├── custom-rtl.css
-│   ├── custom-rtl.min.css
-└── js/
-    ├── bootstrap.bundle.js
-    ├── bootstrap.bundle.min.js
-    ├── bootstrap.js
-    └── bootstrap.min.js
-```
-
-We provide compiled CSS and JS (`bootstrap-rtl.*`), as well as compiled and minified CSS and JS (`bootstrap-rtl.min.*`). CSS [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap-rtl.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
-
-## introduction
-
-Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.
-
-### You can use bootstrap-rtl in two ways
   
-### CSS
+#### CSS
 Copy-paste the stylesheet <link> into your <head> before all other stylesheets to load our CSS.
   
 ```html5
@@ -88,7 +69,7 @@ OR
 ```
 
 
-### JS
+#### JS
 
 <p>Many of our components require the use of JavaScript to function. Specifically, they require <a href="https://jquery.com">jQuery</a>, <a href="https://popper.js.org/">Popper.js</a>, and our own JavaScript plugins. Place the following <code class="highlighter-rouge">&lt;script&gt;</code>s near the end of your pages, right before the closing <code class="highlighter-rouge">&lt;/body&gt;</code> tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins.</p>
 
@@ -99,13 +80,8 @@ OR
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 ```
+#### Starter template
 
-
-
-
-### Starter template
-
-Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like this:
 
 ```html
 <!doctype html>
@@ -116,6 +92,9 @@ Be sure to have your pages set up with the latest design and development standar
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom-rtl.css">
+    <!-- OR -->
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
 
     <title>Hello, world!</title>
@@ -131,6 +110,61 @@ Be sure to have your pages set up with the latest design and development standar
   </body>
 </html>
 ```
+
+### Package managers
+- Install with [npm](https://www.npmjs.com/): `npm install bootstrapRTL`
+- Install with [Bower](https://bower.io): bower install bootstrapRTL --save-dev
+- Install with [Composer](https://getcomposer.org/): `composer require twbs/bootstrapRTL:4.1.3`
+
+
+
+## Status
+
+[![Slack](https://img.shields.io/badge/Slack-channel-%236ecadc.svg)](https://bootstrap-rtl.slack.com/)
+[![Telegram](https://img.shields.io/badge/Telegram-Group-%230088cc.svg)](https://t.me/joinchat/FNTvOkyXjQspDgUxC2IxoA)
+[![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap)
+[![Bower version](https://img.shields.io/badge/Bower-v4.1.3-yellow.svg)](https://rubygems.org/gems/bootstrap)
+[![Packagist Prerelease](https://img.shields.io/packagist/vpre/twbs/bootstrap.svg)](https://packagist.org/packages/twbs/bootstrap)
+[![Github Status](https://img.shields.io/badge/Github-v4.1.3-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
+[![Gitlab Status](https://img.shields.io/badge/Gitlab-v4.1.3-%233A0064.svg)](https://gitlab.com/hamidHeidarinia/bootstrap-rtl)
+
+[![Sauce Labs Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
+
+## What's included
+
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
+
+```
+bootstrap/
+└── dist/
+    ├── css/
+    │   ├── bootstrap-rtl-grid.css
+    │   ├── bootstrap-rtl-grid.css.map
+    │   ├── bootstrap-rtl-grid.min.css
+    │   ├── bootstrap-rtl-grid.min.css.map
+    │   ├── bootstrap-rtl-reboot.css
+    │   ├── bootstrap-rtl-reboot.css.map
+    │   ├── bootstrap-rtl-reboot.min.css
+    │   ├── bootstrap-rtl-reboot.min.css.map
+    │   ├── bootstrap-rtl.css
+    │   ├── bootstrap-rtl.css.map
+    │   ├── bootstrap-rtl.min.css
+    │   ├── bootstrap-rtl.min.css.map
+    |   ├── custom-rtl.css
+    │   └── custom-rtl.min.css
+    | 
+    └── js/
+        ├── bootstrap.bundle.js
+        ├── bootstrap.bundle.js.map
+        ├── bootstrap.bundle.min.js
+        ├── bootstrap.bundle.min.js.map
+        ├── bootstrap.js
+        ├── bootstrap.js.map
+        ├── bootstrap.min.js
+        └── bootstrap.min.js.map
+```
+
+We provide compiled CSS and JS (`bootstrap-rtl.*`), as well as compiled and minified CSS and JS (`bootstrap-rtl.min.*`). [source maps](https://developers.google.com/web/tools/chrome-devtools/debug/readability/source-maps) (`bootstrap-rtl.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
 
 
 ## Bugs and feature requests
@@ -149,6 +183,30 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 | npm run docs   | Builds and lints CSS and JavaScript for docs. You can then run the documentation locally via npm run docs-serve. |
 
 Learn more about build Bootstrap’s by reading its [documentation](http://getbootstrap.com/docs/4.0/getting-started/build-tools/).
+
+### Running documentation locally
+
+1. Run through the [tooling setup](https://getbootstrap.com/docs/4.1/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+2. Run `npm install` to install Node.js dependencies.
+3. Run `npm start` to compile CSS and JavaScript files, generate our docs, and watch for changes.
+4. Open `http://localhost:9001` in your browser, and voilà.
+
+Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
+
+### Documentation for previous releases
+
+- For v2.3.2: <https://getbootstrap.com/2.3.2/>
+- For v3.3.x: <https://getbootstrap.com/docs/3.3/>
+- For v4.0.x: <https://getbootstrap.com/docs/4.0/>
+
+[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
+
+
+## Community
+
+Get updates on Bootstrap's development and chat with the project maintainers and community members.
+
+- Follow [@hamidHeidarinia](https://twitter.com/hamidHeidarinia).
 
 
 ## Community
@@ -184,7 +242,6 @@ Version
 
 ## Creators
 
-
 ### bootstrap v4.1.3
 
 **Mark Otto**
@@ -196,6 +253,7 @@ Version
 
 - <https://twitter.com/fat>
 - <https://github.com/fat>
+
 
 ### bootstrap-rtl v4.1.3
 
