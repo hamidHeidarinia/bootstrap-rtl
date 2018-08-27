@@ -3,7 +3,7 @@
 /* eslint-env meteor */
 
 Package.describe({
-  name: 'bootstrap-rtl',  // https://hamidheidarinia.github.io/bootstrap-rtl/
+  name: 'bootstrap-rtol',  // https://hamidheidarinia.github.io/bootstrap-rtl/
   summary: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
   version: '4.1.3',
   git: 'https://github.com/hamidHeidarinia/bootstrap-rtl'
