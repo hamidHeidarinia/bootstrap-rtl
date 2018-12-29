@@ -232,7 +232,7 @@ Version
 ```
 
 ## Creators
-
+ 
 ### bootstrap v4.1.3
 
 **Mark Otto**
@@ -257,4 +257,4 @@ Version
 
 ## Copyright and license
 
-Code and documentation copyright 2018 the [Bootstrap-rtl Authors](https://github.com/hamidHeidarinia) Code released under the [GPL-3.0 License](https://github.com/hamidHeidarinia/bootstrap-rtl/blob/master/LICENSE). 
+Code and documentation copyright 2018 the [Bootstrap-rtl Authors](https://github.com/hamidHeidarinia) Code released under the [MIT License](https://github.com/hamidHeidarinia/bootstrap-rtl/blob/master/LICENSE). 

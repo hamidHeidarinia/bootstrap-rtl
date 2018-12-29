@@ -90,7 +90,7 @@
   "bugs": {
     "url": "https://github.com/hamidHeidarinia/bootstrap-rtl/issues"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
     "jquery": "1.9.1 - 3",
