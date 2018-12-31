@@ -1,0 +1,27 @@
+{
+  "name": "boostrap-rtol",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "main": "dist/js/bootstrap",
+  "authors": [
+    "The Bootstrap-rtl Authors (https://github.com/hamidHeidarinia/bootstrap-rtl/graphs/contributors)"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://github.com/hamidHeidarinia/bootstrap-rtl",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
