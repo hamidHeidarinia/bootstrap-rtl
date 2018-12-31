@@ -1,0 +1,33 @@
+{
+  "name": "boostrap-rtol",
+  "version": "4.2.1",
+  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "style": "dist/css/bootstrap-rtl.css",
+  "sass": "src/scss/bootstrap.scss",
+  "main": "dist/js/bootstrap",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hamidHeidarinia/bootstrap-rtl.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "author": "The Bootstrap-rtl Authors (https://github.com/hamidHeidarinia/bootstrap-rtl/graphs/contributors)",
+  "contributors": [
+    "Hamid Heidarinia"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamidHeidarinia/bootstrap-rtl/issues"
+  },
+  "homepage": "https://hamidheidarinia.github.io/bootstrap-rtl"
+}
