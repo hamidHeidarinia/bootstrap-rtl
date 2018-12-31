@@ -86,7 +86,9 @@ build/Release
 
 # Dependency directories
 node_modules/
+dist/.cache/
 jspm_packages/
+.gitkeep
 
 # TypeScript v1 declaration files
 typings/
