@@ -297,7 +297,6 @@ label {
 //
 // Details at https://github.com/twbs/bootstrap/issues/24093
 button {
-  // stylelint-disable-next-line property-blacklist
   border-radius: 0;
 }
 
@@ -422,7 +421,7 @@ progress {
 }
 
 //
-// Remove the inner padding in Chrome and Safari on macOS.
+// Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
 //
 
 [type="search"]::-webkit-search-decoration {
