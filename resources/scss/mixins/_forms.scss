@@ -56,9 +56,9 @@
       border-color: $color;
 
       @if $enable-validation-icons {
-        padding-right: $input-height-inner;
+        padding-left: $input-height-inner;
         background-repeat: no-repeat;
-        background-position: center right calc(#{$input-height-inner} / 4);
+        background-position: center left calc(#{$input-height-inner} / 4);
         background-size: calc(#{$input-height-inner} / 2) calc(#{$input-height-inner} / 2);
 
         @if $state == "valid" {
@@ -85,8 +85,8 @@
     .was-validated &:#{$state},
     &.is-#{$state} {
       @if $enable-validation-icons {
-        padding-right: $input-height-inner;
-        background-position: top calc(#{$input-height-inner} / 4) right calc(#{$input-height-inner} / 4);
+        padding-left: $input-height-inner;
+        background-position: top calc(#{$input-height-inner} / 4) left calc(#{$input-height-inner} / 4);
       }
     }
   }
@@ -98,7 +98,7 @@
 
       @if $enable-validation-icons {
         $form-feedback-icon: if($state == "valid", $form-feedback-icon-valid, $form-feedback-icon-invalid);
-        padding-right: $custom-select-feedback-icon-padding-right;
+        padding-left: $custom-select-feedback-icon-padding-left;
         background: $custom-select-background, $form-feedback-icon no-repeat $custom-select-feedback-icon-position / $custom-select-feedback-icon-size;
       }
 
