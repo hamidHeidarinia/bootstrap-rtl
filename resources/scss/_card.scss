@@ -57,7 +57,7 @@
   }
 
   + .card-link {
-    margin-left: $card-spacer-x;
+    margin-right: $card-spacer-x;
   }
 }
 
@@ -196,19 +196,6 @@
       // Handle rounded corners
       @if $enable-rounded {
         &:first-child {
-          @include border-right-radius(0);
-
-          .card-img-top,
-          .card-header {
-            border-top-right-radius: 0;
-          }
-          .card-img-bottom,
-          .card-footer {
-            border-bottom-right-radius: 0;
-          }
-        }
-
-        &:last-child {
           @include border-left-radius(0);
 
           .card-img-top,
@@ -218,6 +205,19 @@
           .card-img-bottom,
           .card-footer {
             border-bottom-left-radius: 0;
+          }
+        }
+
+        &:last-child {
+          @include border-right-radius(0);
+
+          .card-img-top,
+          .card-header {
+            border-top-right-radius: 0;
+          }
+          .card-img-bottom,
+          .card-footer {
+            border-bottom-right-radius: 0;
           }
         }
 
