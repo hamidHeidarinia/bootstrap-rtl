@@ -29,9 +29,9 @@
 .carousel-item {
   position: relative;
   display: none;
-  float: left;
+  float: right;
   width: 100%;
-  margin-right: -100%;
+  margin-left: -100%;
   backface-visibility: hidden;
   @include transition($carousel-transition);
 }
@@ -151,7 +151,7 @@
   z-index: 15;
   display: flex;
   justify-content: center;
-  padding-left: 0; // override <ol> default
+  padding-right: 0; // override <ol> default
   // Use the .carousel-control's width as margin so we don't overlay those
   margin-right: $carousel-control-width;
   margin-left: $carousel-control-width;
