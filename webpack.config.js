@@ -1,5 +1,8 @@
 const path = require('path');
 
+// simplifies creation of HTML files -  https://webpack.js.org/plugins/html-webpack-plugin/#src/components/Sidebar/Sidebar.jsx
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 /*
  * Cleaning up the /dist folder -
  * https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
@@ -60,6 +63,7 @@ module.exports = {
     devtool: 'source-map',
 
      plugins: [
+        new HtmlWebpackPlugin()
         // Cleaning up the /dist folder - https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
         new CleanWebpackPlugin(pathsToClean, cleanOptions),
          /* 
