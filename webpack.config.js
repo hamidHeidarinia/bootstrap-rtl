@@ -1,8 +1,5 @@
 const path = require('path');
 
-// simplifies creation of HTML files -  https://webpack.js.org/plugins/html-webpack-plugin/#src/components/Sidebar/Sidebar.jsx
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 /*
  * Cleaning up the /dist folder -
  * https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
@@ -11,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // the path(s) that should be cleaned
- let pathsToClean = [
+let pathsToClean = [
     'dist/css',
     'dist/.cache'
 ];
@@ -30,7 +27,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 // extracts CSS - https://webpack.js.org/plugins/mini-css-extract-plugin/#src/components/Sidebar/Sidebar.jsx
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
- /*
+/*
  * magnify the output
  * so make sure to also specify a JS minimizer
  * https://webpack.js.org/plugins/mini-css-extract-plugin/#minimizing-for-production
@@ -47,31 +44,30 @@ const Notifier = require('./src/plugins/Notifier');
 module.exports = {
 
     entry: {
-        'bootstrap-grid-rtl': path.resolve(__dirname, 'src/scss/bootstrap-grid.scss'),
-        'bootstrap-reboot-rtl': path.resolve(__dirname, 'src/scss/bootstrap-reboot.scss'),
         'bootstrap-rtl': path.resolve(__dirname, 'src/scss/bootstrap.scss'),
+        'bootstrap-rtl-grid': path.resolve(__dirname, 'src/scss/bootstrap-grid.scss'),
+        'bootstrap-rtl-reboot': path.resolve(__dirname, 'src/scss/bootstrap-reboot.scss'),
         'coustom-rtl':  path.resolve(__dirname, 'src/custom-scss/custom-rtl.scss')
     },
 
     mode: devMode ? 'production' : 'development',
 
-     /*
+    /*
      * Using source maps
      * https://webpack.js.org/guides/development/#using-source-maps
      * source maps used for debugging code
      */
     devtool: 'source-map',
 
-     plugins: [
-        new HtmlWebpackPlugin(),
+    plugins: [
         // Cleaning up the /dist folder - https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
         new CleanWebpackPlugin(pathsToClean, cleanOptions),
-         /* 
+        /* 
          * This plugin extracts CSS into separate files.
          * It creates a CSS file per JS file which contains CSS. 
          * https://webpack.js.org/plugins/mini-css-extract-plugin/#advanced-configuration-example
          */
-         new MiniCssExtractPlugin({
+        new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
             // both options are optional
             filename: devMode ? 'css/[name].min.css' : 'css/[name].css',
@@ -81,36 +77,36 @@ module.exports = {
         new Notifier()
     ],
 
-     output: {
+    output: {
         filename: devMode === 'production' ? '.cache/[name].min.js' : '.cache/[name].js',
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/dist'
     },
 
-     optimization: {
-         minimizer: [
-             new UglifyJsPlugin({
-                test: /\.js($|\?)/i,
-                cache: true,
-                parallel: 4,
-                sourceMap: true
-            }),
+    optimization: {
+        minimizer: [
+        new UglifyJsPlugin({
+            test: /\.js($|\?)/i,
+            cache: true,
+            parallel: 4,
+            sourceMap: true
+        }),
             new OptimizeCSSAssetsPlugin({})
         ],
     },
 
-     module: {
-         rules: [
-             {
-                test: /\.m?js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
+    module: {
+        rules: [
+            {
+            test: /\.m?js$/,
+            exclude: /(node_modules|bower_components)/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
                 }
-            },
+            }
+        },
             // CSS file - Loading CSS - https://webpack.js.org/guides/asset-management/#loading-css
             {
                 test: /\.css$/,
@@ -127,18 +123,18 @@ module.exports = {
                 ]
             },
             // Loads a Sass/SCSS file and compiles it to CSS. - sass-loader - https://webpack.js.org/loaders/sass-loader/#src/components/Sidebar/Sidebar.jsx
-             {
+            {
                 test: /\.(sa|sc|c)ss$/,
                 exclude: /node_modules/,
-                 use: [
+                use: [
                     {loader: devMode === 'production' ? 'style-loader' : MiniCssExtractPlugin.loader},
-                     {
-                         loader: "css-loader", options: {
+                    {
+                        loader: "css-loader", options: {
                             sourceMap: true
                         }
                     },
-                     {
-                         loader: "sass-loader", options: {
+                    {
+                        loader: "sass-loader", options: {
                             sourceMap: true,
                         }
                     }
