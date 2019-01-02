@@ -12,8 +12,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 // the path(s) that should be cleaned
  let pathsToClean = [
-    'public/css',
-    'public/.cache'
+    'dist/css',
+    'dist/.cache'
 ];
 
 // the clean options to use
@@ -42,15 +42,15 @@ const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const devMode = process.env.NODE_ENV === 'production';
 
 // show notification - https://www.npmjs.com/package/node-notifier
-const Notifier = require('./resources/scripts/plugins/Notifier');
+const Notifier = require('./src/plugins/Notifier');
 
 module.exports = {
 
     entry: {
-        'bootstrap-grid': path.resolve(__dirname, 'resources/scss/bootstrap-grid.scss'),
-        'bootstrap-reboot': path.resolve(__dirname, 'resources/scss/bootstrap-reboot.scss'),
-        'bootstrap': path.resolve(__dirname, 'resources/scss/bootstrap.scss'),
-        'coustom-rtl':  path.resolve(__dirname, 'resources/custom-scss/custom-rtl.scss')
+        'bootstrap-grid-rtl': path.resolve(__dirname, 'src/scss/bootstrap-grid.scss'),
+        'bootstrap-reboot-rtl': path.resolve(__dirname, 'src/scss/bootstrap-reboot.scss'),
+        'bootstrap-rtl': path.resolve(__dirname, 'src/scss/bootstrap.scss'),
+        'coustom-rtl':  path.resolve(__dirname, 'src/custom-scss/custom-rtl.scss')
     },
 
     mode: devMode ? 'production' : 'development',
@@ -63,7 +63,7 @@ module.exports = {
     devtool: 'source-map',
 
      plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin(),
         // Cleaning up the /dist folder - https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
         new CleanWebpackPlugin(pathsToClean, cleanOptions),
          /* 
@@ -83,8 +83,8 @@ module.exports = {
 
      output: {
         filename: devMode === 'production' ? '.cache/[name].min.js' : '.cache/[name].js',
-        path: path.resolve(__dirname, 'public'),
-        publicPath: '/public'
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist'
     },
 
      optimization: {
