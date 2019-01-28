@@ -88,7 +88,9 @@ build/Release
 node_modules/
 dist/.cache/
 jspm_packages/
+src/demo/
 .gitkeep
+src/demo.html
 
 # TypeScript v1 declaration files
 typings/
