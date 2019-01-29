@@ -126,6 +126,7 @@ module.exports = {
             {
                 test: /\.(sa|sc|c)ss$/,
                 exclude: /node_modules/,
+                // exclude: /custom-rtl.scss/,
                 use: [
                     {loader: devMode === 'production' ? 'style-loader' : MiniCssExtractPlugin.loader},
                     {
