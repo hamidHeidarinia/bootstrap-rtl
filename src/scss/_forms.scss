@@ -235,8 +235,8 @@ textarea.form-control {
   .form-check-input {
     position: static;
     margin-top: 0;
-    margin-right: $form-check-inline-input-margin-x;
-    margin-left: 0;
+    margin-left: $form-check-inline-input-margin-x;
+    margin-right: 0;
   }
 }
 
@@ -314,7 +314,7 @@ textarea.form-control {
       align-items: center;
       justify-content: center;
       width: auto;
-      padding-right: 0;
+      padding-left: 0;
     }
     .form-check-input {
       position: relative;

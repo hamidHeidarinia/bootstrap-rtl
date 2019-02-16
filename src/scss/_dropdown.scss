@@ -37,9 +37,9 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .dropdown-menu#{$infix}-right {
-      right: auto;
-      left: 0;
+    .dropdown-menu#{$infix}-left {
+      right: 0;
+      left: auto;
     }
   }
 }
@@ -48,9 +48,9 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-    .dropdown-menu#{$infix}-left {
-      right: 0;
-      left: auto;
+    .dropdown-menu#{$infix}-right {
+      right: auto;
+      left: 0;
     }
   }
 }
@@ -76,12 +76,12 @@
     right: auto;
     left: 100%;
     margin-top: 0;
-    margin-right: $dropdown-spacer;
+    margin-left: $dropdown-spacer;
   }
 
   .dropdown-toggle {
     @include caret(right);
-    &::after {
+    &::before {
       vertical-align: 0;
     }
   }
@@ -90,15 +90,15 @@
 .dropleft {
   .dropdown-menu {
     top: 0;
-    right: 100%;
-    left: auto;
+    left: 100%;
+    right: auto;
     margin-top: 0;
-    margin-left: $dropdown-spacer;
+    margin-right: $dropdown-spacer;
   }
 
   .dropdown-toggle {
     @include caret(left);
-    &::before {
+    &::after {
       vertical-align: 0;
     }
   }

@@ -178,7 +178,7 @@
 
     &::after {
       top: calc(#{(($font-size-base * $line-height-base - $custom-control-indicator-size) / 2)} + #{$custom-control-indicator-border-width * 2});
-      right: calc(#{-($custom-switch-width + $custom-control-gutter)} + #{$custom-control-indicator-border-width * 2});
+      left: calc(#{-($custom-switch-width + $custom-control-gutter)} + #{$custom-control-indicator-border-width * 2});
       width: $custom-switch-indicator-size;
       height: $custom-switch-indicator-size;
       background-color: $custom-control-indicator-border-color;
@@ -212,7 +212,7 @@
   display: inline-block;
   width: 100%;
   height: $custom-select-height;
-  padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+  padding: $custom-select-padding-y $custom-select-padding-x $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding);
   font-weight: $custom-select-font-weight;
   line-height: $custom-select-line-height;
   color: $custom-select-color;
@@ -226,6 +226,7 @@
     border-radius: 0;
   }
   @include box-shadow($custom-select-box-shadow);
+  -webkit-appearance: none;
   appearance: none;
 
   &:focus {
@@ -270,7 +271,7 @@
   height: $custom-select-height-sm;
   padding-top: $custom-select-padding-y-sm;
   padding-bottom: $custom-select-padding-y-sm;
-  padding-right: $custom-select-padding-x-sm;
+  padding-left: $custom-select-padding-x-sm;
   font-size: $custom-select-font-size-sm;
 }
 
@@ -278,7 +279,7 @@
   height: $custom-select-height-lg;
   padding-top: $custom-select-padding-y-lg;
   padding-bottom: $custom-select-padding-y-lg;
-  padding-right: $custom-select-padding-x-lg;
+  padding-left: $custom-select-padding-x-lg;
   font-size: $custom-select-font-size-lg;
 }
 
@@ -353,7 +354,7 @@
     content: "Browse";
     @include gradient-bg($custom-file-button-bg);
     border-right: inherit;
-    @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
+    //@include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
 }
 
@@ -368,6 +369,8 @@
   height: calc(#{$custom-range-thumb-height} + #{$custom-range-thumb-focus-box-shadow-width * 2});
   padding: 0; // Need to reset padding
   background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 
   &:focus {
@@ -472,7 +475,7 @@
   }
 
   &::-ms-fill-upper {
-    margin-left: 15px; // arbitrary?
+    margin-right: 15px; // arbitrary?
     background-color: $custom-range-track-bg;
     @include border-radius($custom-range-track-border-radius);
   }
@@ -505,3 +508,4 @@
 .custom-select {
   @include transition($custom-forms-transition);
 }
+
