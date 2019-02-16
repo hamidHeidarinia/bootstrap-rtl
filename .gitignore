@@ -86,7 +86,7 @@ build/Release
 
 # Dependency directories
 node_modules/
-dist/.cache/
+dist/.cache/**
 jspm_packages/
 src/demo/
 .gitkeep
