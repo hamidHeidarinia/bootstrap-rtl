@@ -1,0 +1,51 @@
+/*!
+ * Bootstrap-rtl v4.2.1 (https://hamidheidarinia.github.io/bootstrap-rtl/)
+ * Copyright 2018-2019 The Bootstrap-rtl Authors
+ * Copyright 2018-2019 Hamid Heidarinia.
+ * Licensed under MIT (https://github.com/hamidHeidarinia/bootstrap-rtl/blob/master/LICENSE)
+ */
+
+// bootstrap-rtl
+@import "functions";
+@import "variables";
+// mixins > Utilities
+@import "mixins/breakpoints";
+@import "mixins/hover";
+@import "mixins/reset-text";
+// mixins > Components
+@import "mixins/alert";
+@import "mixins/caret";
+@import "mixins/pagination";
+@import "mixins/lists";
+@import "mixins/list-group";
+@import "mixins/nav-divider";
+@import "mixins/forms";
+// mixins > Skins
+@import "mixins/border-radius";
+@import "mixins/box-shadow";
+@import "mixins/gradients";
+@import "mixins/transition";
+// mixins > Layout
+@import "mixins/clearfix";
+@import "mixins/grid";
+// bootstrap-rtl
+@import "reboot";
+@import "code";
+@import "forms";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "alert";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "carousel";
+@import "spinners";
+// utilities
+@import "utilities/spacing";
