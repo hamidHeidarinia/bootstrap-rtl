@@ -1,6 +1,6 @@
 .close {
-  position: absolute;
-  left: 0;
+  // position: absolute;
+  // left: 0;
   float: left;
   font-size: $close-font-size;
   font-weight: $close-font-weight;
@@ -36,6 +36,12 @@ button.close {
   background-color: transparent;
   border: 0;
   appearance: none;
+}
+
+// modal close 
+button.close[data-dismiss=modal] {
+    position: absolute;
+    left: 0;
 }
 
 // Future-proof disabling of clicks on `<a>` elements
