@@ -1,15 +1,15 @@
-window.Popper = require('popper.js')
-window.$ = window.jQuery = require('jquery')
-import './dist/alert.js'
-import './dist/button.js'
-import './dist/carousel.js'
-import './dist/collapse.js'
-import './dist/dropdown.js'
-import './dist/index.js'
-import './dist/modal.js'
-import './dist/popover.js'
-import './dist/scrollspy.js'
-import './dist/tab.js'
-import './dist/toast.js'
-import './dist/tooltip.js'
-import './dist/util.js'
+window.Popper = require('popper.js');
+window.$ = window.jQuery = require('jquery');
+import './dist/alert.js';
+import './dist/button.js';
+import './dist/carousel.js';
+import './dist/collapse.js';
+import './dist/dropdown.js';
+import './dist/index.js';
+import './dist/modal.js';
+import './dist/popover.js';
+import './dist/scrollspy.js';
+import './dist/tab.js';
+import './dist/toast.js';
+import './dist/tooltip.js';
+import './dist/util.js';
