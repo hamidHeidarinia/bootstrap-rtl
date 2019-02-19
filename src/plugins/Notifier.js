@@ -9,7 +9,7 @@ class Notifier {
     notification(stats) {
         const time = ((stats.endTime - stats.startTime) / 1000).toFixed(2);
         notifier.notify({
-            title : 'My Notification',
+            title : 'Bootstrap-rtl Notification',
             message: `webpack processing successfully completed!\n${stats.compilation.errors.length} errors \n Run in : ${time}s `,
             icon: 'Terminal Icon', // Absolute Path to Triggering Icon
         });

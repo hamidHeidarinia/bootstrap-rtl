@@ -11,6 +11,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 let pathsToClean = [
     'dist/css',
     'dist/.cache'
+    // 'dist'
 ];
 
 // the clean options to use
@@ -47,17 +48,12 @@ module.exports = {
         'bootstrap-rtl': path.resolve(__dirname, 'src/scss/bootstrap.scss'),
         'bootstrap-rtl-grid': path.resolve(__dirname, 'src/scss/bootstrap-grid.scss'),
         'bootstrap-rtl-reboot': path.resolve(__dirname, 'src/scss/bootstrap-reboot.scss'),
-        'custom-rtl':  path.resolve(__dirname, 'src/scss/custom-rtl.scss')
+        'custom-rtl':  path.resolve(__dirname, 'src/scss/bootstrap-custom.scss'),
+        // 'bootstrap': path.resolve(__dirname, 'src/scripts/bootstrap.js'),
+        // 'bootstrap.bundle': path.resolve(__dirname, 'src/scripts/bootstrap.bundle.js')
     },
 
     mode: devMode ? 'production' : 'development',
-
-    /*
-     * Using source maps
-     * https://webpack.js.org/guides/development/#using-source-maps
-     * source maps used for debugging code
-     */
-    devtool: 'source-map',
 
     plugins: [
         // Cleaning up the /dist folder - https://webpack.js.org/guides/output-management/#cleaning-up-the-dist-folder
@@ -78,18 +74,18 @@ module.exports = {
     ],
 
     output: {
-        filename: devMode === 'production' ? '.cache/[name].min.js' : '.cache/[name].js',
+        // filename: devMode === 'production' ? 'js/[name].min.js' : 'js/[name].js',
+        filename: `.cache/[name]${ devMode ? '.min' : ''  }.js`,
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist'
+        publicPath: 'dist/'
     },
 
     optimization: {
         minimizer: [
         new UglifyJsPlugin({
-            test: /\.js($|\?)/i,
             cache: true,
-            parallel: 4,
-            sourceMap: true
+            parallel: true,
+            sourceMap: true // set to true if you want JS source maps
         }),
             new OptimizeCSSAssetsPlugin({})
         ],
@@ -114,6 +110,11 @@ module.exports = {
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            // you can specify a publicPath here
+                            // by default it use publicPath in webpackOptions.output
+                            publicPath: 'dist/css'
+                        }
                     }, {
                         loader: 'css-loader',
                         options: {
@@ -128,19 +129,36 @@ module.exports = {
                 exclude: /node_modules/,
                 // exclude: /custom-rtl.scss/,
                 use: [
-                    {loader: devMode === 'production' ? 'style-loader' : MiniCssExtractPlugin.loader},
+                    // {loader: devMode === 'production' ? 'style-loader' : MiniCssExtractPlugin.loader},
+                    {
+                    loader: devMode === 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    // loader: devMode ? MiniCssExtractPlugin.loader : 'style-loader',
+                        options: {
+                            // you can specify a publicPath here
+                            // by default it use publicPath in webpackOptions.output
+                            publicPath: 'dist/css'
+                        }
+                    },
                     {
                         loader: "css-loader", options: {
+                            // url: false,
                             sourceMap: true
                         }
                     },
                     {
                         loader: "sass-loader", options: {
                             sourceMap: true,
+                            includePaths: ["src/sass", "dist/css"]
                         }
                     }
                 ]
             }
         ]
-    }
+    },
+    /*
+     * Using source maps
+     * https://webpack.js.org/guides/development/#using-source-maps
+     * source maps used for debugging code
+     */
+    devtool: 'source-map',
 };

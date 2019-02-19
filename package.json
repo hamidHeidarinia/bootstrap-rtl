@@ -1,14 +1,15 @@
 {
-  "name": "boostrap-rtol",
+  "name": "bootstrap-rtol",
   "version": "4.2.1",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "style": "dist/css/bootstrap-rtl.css",
   "sass": "src/scss/bootstrap.scss",
   "main": "dist/js/bootstrap",
   "scripts": {
-    "test": "webpack --config webpack.config.js",
-    "dist": "cross-env NODE_ENV=production webpack --mode=production",
-    "dev": "cross-env NODE_ENV=development webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run dev -- --watch",
+    "dist": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
     "responsive",
     "front-end",
     "framework",
-    "web"
+    "web",
+    "bootstrap-rtl",
+    "right-to-left"
   ],
   "author": "The Bootstrap-rtl Authors (https://github.com/hamidHeidarinia/bootstrap-rtl/graphs/contributors)",
   "contributors": [
@@ -35,20 +38,22 @@
   "private": false,
   "devDependencies": {
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.4",
-    "clean-webpack-plugin": "^1.0.0",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
+    "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.5.0",
-    "node-notifier": "^5.3.0",
+    "node-notifier": "^5.4.0",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "^4.0.3",
+    "popper.js": "^1.14.7",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^4.29.4",
+    "webpack-cli": "^3.2.3"
   },
   "dependencies": {
     "bundle-loader": "^0.5.6",
