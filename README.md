@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/hamidHeidarinia/bootstrap-rtl">
-    <img src="https://getbootstrap.com/docs/4.1/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width=72 height=72>
+    <img src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width=72 height=72>
   </a>
 
   <h3 align="center">Bootstrap-rtl</h3>
@@ -24,11 +24,11 @@
 
 - [Table of contents](#table-of-contents)
 - [Quick start](#quick-start)
+  - [Package managers](#package-managers)
   - [Download](#download)
     - [CSS](#css)
     - [JS](#js)
     - [Starter template](#starter-template)
-  - [Package managers](#package-managers)
 - [Status](#status)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
@@ -36,22 +36,25 @@
   - [Using NPM scripts](#using-npm-scripts)
   - [Running documentation locally](#running-documentation-locally)
 - [Community](#community)
-- [Community](#community)
 - [Versioning](#versioning)
 - [Creators](#creators)
-  - [bootstrap v4.1.3](#bootstrap-v413)
-  - [bootstrap-rtl v4.1.3](#bootstrap-rtl-v413)
+  - [bootstrap v4.2.1](#bootstrap-v421)
+  - [bootstrap-rtl v4.2.1](#bootstrap-rtl-v421)
 - [Copyright and license](#copyright-and-license)
 
 ## Quick start
 
 Several quick start options are available:
 
+### Package managers
+- Install with [npm](https://www.npmjs.com/): `npm install bootstrap-rtol`
+- Install with [Bower](https://bower.io): bower install bootstrap-rtol
+
 ### Download
-- [Download the latest release.](https://github.com/hamidHeidarinia/bootstrap-rtl/archive/master.zip)
+- [Download the latest release.](https://github.com/hamidHeidarinia/bootstrap-rtl/archive/v4.2.1.zip)
 - Clone the repo on Github: `https://github.com/hamidHeidarinia/bootstrap-rtl.git`
 - Clone the repo on Gitlab: `https://gitlab.com/hamidHeidarinia/bootstrap-rtl.git`
-- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/bootstrap-rtl-4.1.3-dist.zip)
+- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/download/bootstrap-rtl-4.2.1-dist.zip)
 
   
 #### CSS
@@ -109,45 +112,24 @@ OR
   </body>
 </html>
 ```
-
-### Package managers
-- Install with [npm](https://www.npmjs.com/): `npm install bootstrap-rtol`
-- Install with [Bower](https://bower.io): bower install bootstrap-rtol
-
-
-
 ## Status
 
-[![Slack](https://img.shields.io/badge/Slack-channel-%236ecadc.svg)](https://bootstrap-rtl.slack.com/)
-[![Telegram](https://img.shields.io/badge/Telegram-Group-%230088cc.svg)](https://t.me/joinchat/FNTvOkyXjQspDgUxC2IxoA)
 [![npm version](https://img.shields.io/npm/v/bootstrap.svg)](https://www.npmjs.com/package/bootstrap-rtol)
 [![Bower version](https://img.shields.io/badge/Bower-v4.1.3-yellow.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
 [![Github Status](https://img.shields.io/badge/Github-v4.1.3-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
 [![Gitlab Status](https://img.shields.io/badge/Gitlab-v4.1.3-%233A0064.svg)](https://gitlab.com/hamidHeidarinia/bootstrap-rtl)
-
-[![Sauce Labs Test Status](https://saucelabs.com/browser-matrix/bootstrap.svg)](https://saucelabs.com/u/bootstrap)
 
 ## What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
 ```
-bootstrap/
+bootstrap-rtl/
 └── dist/
-    ├── css/
-    │   ├── bootstrap-rtl-grid.css
-    │   ├── bootstrap-rtl-grid.css.map
-    │   ├── bootstrap-rtl-grid.min.css
-    │   ├── bootstrap-rtl-grid.min.css.map
-    │   ├── bootstrap-rtl-reboot.css
-    │   ├── bootstrap-rtl-reboot.css.map
-    │   ├── bootstrap-rtl-reboot.min.css
-    │   ├── bootstrap-rtl-reboot.min.css.map
-    │   ├── bootstrap-rtl.css
-    │   ├── bootstrap-rtl.css.map
-    │   ├── bootstrap-rtl.min.css
-    │   ├── bootstrap-rtl.min.css.map
-    |   ├── custom-rtl.css
+    ├── css/ 
+    │   ├── bootstrap-rtl-grid.min.css 
+    │   ├── bootstrap-rtl-reboot.min.css    
+    │   ├── bootstrap-rtl.min.css   
     │   └── custom-rtl.min.css
     | 
     └── js/
@@ -175,43 +157,31 @@ Have a bug or a feature request? Please first read the [issue guidelines](https:
 
 | Task | Description |
 | ------ | ------ |
-| npm run dist | npm run dist creates the /dist directory with compiled files. Uses Sass, Autoprefixer, and UglifyJS. |
-| npm test | Same as npm run dist plus it runs tests locally |
-| npm run docs   | Builds and lints CSS and JavaScript for docs. You can then run the documentation locally via npm run docs-serve. |
+| npm run dist | npm run dist creates the /dist directory with compiled files. |
+| npm run dev | saving only as development dependencies |
+| npm run watch   | Run scripts from package.json when files change. Builds and lints CSS and JavaScript for docs. |
 
 Learn more about build Bootstrap’s by reading its [documentation](http://getbootstrap.com/docs/4.0/getting-started/build-tools/).
 
 ### Running documentation locally
 
-1. Run through the [tooling setup](https://getbootstrap.com/docs/4.1/getting-started/build-tools/#tooling-setup) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
+1. Run through the [Using NPM scripts](#using-npm-scripts) to install Jekyll (the site builder) and other Ruby dependencies with `bundle install`.
 2. Run `npm install` to install Node.js dependencies.
-3. Run `npm start` to compile CSS and JavaScript files, generate our docs, and watch for changes.
-4. Open `http://localhost:9001` in your browser, and voilà.
 
 Learn more about using Jekyll by reading its [documentation](https://jekyllrb.com/docs/home/).
 
-[Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
-
-
-## Community
-
-Get updates on Bootstrap's development and chat with the project maintainers and community members.
-
-- Follow [@hamidHeidarinia](https://twitter.com/hamidHeidarinia).
-
+[Previous releases](https://github.com/hamidHeidarinia/bootstrap-rtl/releases) and their documentation are also available for download.
 
 ## Community
 
 Get updates on Bootstrap's development and chat with the project maintainers and community members.
 
 - Follow [@hamidHeidarinia](https://twitter.com/hamidHeidarinia).
-
-
 
 ## Versioning
 
 <p>
-  Currently Project is V4.1.3
+  Currently Project is V4.2.1
   
   Note :  As Bootstrap Upgrade To new Version , Our BT-RTL Also Will Update
 </p>
@@ -221,11 +191,7 @@ Version
 ├── v 4.0
 |   └── v 4.1
 |   |
-|   └── v 4.1.1
-|   |
-|   └── v 4.1.2
-|   |
-|   └── v 4.1.3
+|   └── v 4.2
 |
  
 
@@ -233,7 +199,7 @@ Version
 
 ## Creators
  
-### bootstrap v4.1.3
+### bootstrap v4.2.1
 
 **Mark Otto**
 
@@ -246,14 +212,13 @@ Version
 - <https://github.com/fat>
 
 
-### bootstrap-rtl v4.1.3
+### bootstrap-rtl v4.2.1
 
 **Hamid Heidarinia**
 
 - <https://twitter.com/hamidHeidarinia>
 - <https://github.com/hamidHeidarinia>
 - <https://www.linkedin.com/in/hamid-heidarinia>
-- <https://www.heidarinia.pro>
 
 ## Copyright and license
 
