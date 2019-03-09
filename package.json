@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-rtol",
-  "version": "4.2.1",
+  "version": "4.3.1",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "style": "dist/css/bootstrap-rtl.css",
   "sass": "src/scss/bootstrap.scss",

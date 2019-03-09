@@ -1,9 +1,8 @@
 <p align="center">
-  <a href="https://github.com/hamidHeidarinia/bootstrap-rtl">
-    <img src="https://getbootstrap.com/docs/4.2/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width=72 height=72>
-  </a>
 
-  <h3 align="center">Bootstrap-rtl</h3>
+  <h3 align="center">
+    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl">Bootstrap-rtl</a>
+  </h3>
 
   <p align="center">
     Sleek, intuitive, and powerful front-end framework for faster and easier web development.
@@ -38,8 +37,8 @@
 - [Community](#community)
 - [Versioning](#versioning)
 - [Creators](#creators)
-  - [bootstrap v4.2.1](#bootstrap-v421)
-  - [bootstrap-rtl v4.2.1](#bootstrap-rtl-v421)
+  - [bootstrap v4.3.1](#bootstrap-v431)
+  - [bootstrap-rtl v4.3.1](#bootstrap-rtl-v431)
 - [Copyright and license](#copyright-and-license)
 
 ## Quick start
@@ -51,10 +50,10 @@ Several quick start options are available:
 - Install with [Bower](https://bower.io): bower install bootstrap-rtol
 
 ### Download
-- [Download the latest release.](https://github.com/hamidHeidarinia/bootstrap-rtl/archive/v4.2.1.zip)
+- [Download the latest release.](https://github.com/hamidHeidarinia/bootstrap-rtl/archive/v4.3.1.zip)
 - Clone the repo on Github: `https://github.com/hamidHeidarinia/bootstrap-rtl.git`
 - Clone the repo on Gitlab: `https://gitlab.com/hamidHeidarinia/bootstrap-rtl.git`
-- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/download/bootstrap-rtl-4.2.1-dist.zip)
+- [Download Compiled CSS and JS](https://github.com/hamidHeidarinia/bootstrap-rtl/raw/master/download/bootstrap-rtl-4.3.1-dist.zip)
 
   
 #### CSS
@@ -116,8 +115,8 @@ OR
 
 [![npm version](https://img.shields.io/npm/v/bootstrap-rtol.svg?color=red)](https://www.npmjs.com/package/bootstrap-rtol)
 [![Bower version](https://img.shields.io/bower/v/bootstrap-rtol.svg?color=yellow)](https://github.com/hamidHeidarinia/bootstrap-rtl)
-[![Github Status](https://img.shields.io/badge/Github-v4.1.3-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
-[![Gitlab Status](https://img.shields.io/badge/Gitlab-v4.1.3-%233A0064.svg)](https://gitlab.com/hamidHeidarinia/bootstrap-rtl)
+[![Github Status](https://img.shields.io/badge/github-v4.3.1-%23292C32.svg)](https://github.com/hamidHeidarinia/bootstrap-rtl)
+[![Gitlab Status](https://img.shields.io/badge/gitlab-v4.3.1-blueviolet.svg)](https://gitlab.com/hamidHeidarinia/bootstrap-rtl)
 
 ## What's included
 
@@ -181,7 +180,7 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 ## Versioning
 
 <p>
-  Currently Project is V4.2.1
+  Currently Project is V4.3.1
   
   Note :  As Bootstrap Upgrade To new Version , Our BT-RTL Also Will Update
 </p>
@@ -192,6 +191,8 @@ Version
 |   └── v 4.1
 |   |
 |   └── v 4.2
+|   |
+|   └── v 4.3
 |
  
 
@@ -199,7 +200,7 @@ Version
 
 ## Creators
  
-### bootstrap v4.2.1
+### bootstrap v4.3.1
 
 **Mark Otto**
 
@@ -212,7 +213,7 @@ Version
 - <https://github.com/fat>
 
 
-### bootstrap-rtl v4.2.1
+### bootstrap-rtl v4.3.1
 
 **Hamid Heidarinia**
 

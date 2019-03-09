@@ -49,8 +49,6 @@ module.exports = {
         'bootstrap-rtl-grid': path.resolve(__dirname, 'src/scss/bootstrap-grid.scss'),
         'bootstrap-rtl-reboot': path.resolve(__dirname, 'src/scss/bootstrap-reboot.scss'),
         'custom-rtl':  path.resolve(__dirname, 'src/scss/bootstrap-custom.scss'),
-        // 'bootstrap': path.resolve(__dirname, 'src/scripts/bootstrap.js'),
-        // 'bootstrap.bundle': path.resolve(__dirname, 'src/scripts/bootstrap.bundle.js')
     },
 
     mode: devMode ? 'production' : 'development',
