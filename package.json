@@ -37,12 +37,12 @@
   "homepage": "https://hamidheidarinia.github.io/bootstrap-rtl",
   "private": false,
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
     "cross-env": "^5.2.0",
-    "css-loader": "^2.1.0",
+    "css-loader": "^2.1.1",
     "jquery": "^3.3.1",
     "mini-css-extract-plugin": "^0.5.0",
     "node-notifier": "^5.4.0",
@@ -51,8 +51,8 @@
     "popper.js": "^1.14.7",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "uglifyjs-webpack-plugin": "^2.1.1",
-    "webpack": "^4.29.4",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3"
   },
   "dependencies": {
