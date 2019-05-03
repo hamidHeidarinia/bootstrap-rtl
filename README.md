@@ -1,13 +1,13 @@
 <p align="center">
 
   <h3 align="center">
-    <a href="https://github.com/hamidHeidarinia/bootstrap-rtl">Bootstrap-rtl</a>
+    <a href="https://hamidheidarinia.github.io/bootstrap-rtl/">Bootstrap-rtl</a>
   </h3>
 
   <p align="center">
     Sleek, intuitive, and powerful front-end framework for faster and easier web development.
     <br>
-    <a href="https://getbootstrap.com/docs/4.1/"><strong>Explore Bootstrap docs »</strong></a>
+    <a href="https://hamidheidarinia.github.io/bootstrap-rtl/"><strong>Explore Bootstrap docs »</strong></a>
     <br>
     <br>
     <a href="https://github.com/hamidHeidarinia/bootstrap-rtl/issues/new">Report bug</a>
