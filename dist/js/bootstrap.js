@@ -1557,8 +1557,8 @@
   var AttachmentMap = {
     TOP: 'top-start',
     TOPEND: 'top-end',
-    BOTTOM: 'bottom-start',
-    BOTTOMEND: 'bottom-end',
+    BOTTOM: 'bottom-end',
+    BOTTOMEND: 'bottom-start',
     RIGHT: 'right-start',
     RIGHTEND: 'right-end',
     LEFT: 'left-start',

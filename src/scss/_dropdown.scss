@@ -40,13 +40,13 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     .dropdown-menu#{$infix}-right {
-      right: auto;
-      left: 0;
+      right: 0;
+      left: auto;
     }
 
     .dropdown-menu#{$infix}-left {
-      right: 0;
-      left: auto;
+      right: auto;
+      left: 0;
     }
   }
 }
